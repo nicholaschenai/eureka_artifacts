@@ -1,0 +1,29 @@
+@torch.jit.script
+def compute_reward(root_states: torch.Tensor, dt: float) -> Tuple[torch.Tensor, Dict[str, torch.Tensor]]:
+    device = root_states.device
+    velocity = root_states[:, 7:10]
+    forward_velocity = velocity[:, 0]
+
+    # Define maximum speed for normalization
+    max_speed = 15.0
+    forward_reward = forward_velocity.clamp(min=0.0) / max_speed
+
+    # Increase the impact of sideways penalty for better learning
+    sideways_velocity = torch.norm(velocity[:, 1:3], p=2, dim=-1)
+    optimized_sideways_penalty = -1.5 * sideways_velocity / max_speed  # Adjusted penalty scaling
+
+    # Apply a transformation to the forward reward to enhance impact
+    forward_temperature = 2.0
+    transformed_forward_reward = torch.exp(forward_temperature * forward_reward) - 1.0
+
+    # No transformation is needed as the sideways penalty is already modified
+    transformed_sideways_penalty = optimized_sideways_penalty
+
+    # Simplified overall reward calculation
+    total_reward = transformed_forward_reward + transformed_sideways_penalty
+
+    return total_reward, {
+        "forward_reward": forward_reward,
+        "optimized_sideways_penalty": optimized_sideways_penalty,
+        "transformed_forward_reward": transformed_forward_reward,
+    }

@@ -1,0 +1,1382 @@
+Importing module 'gym_38' (/home/nick_work/isaacgym/python/isaacgym/_bindings/linux-x86_64/gym_38.so)
+Setting GYM_USD_PLUG_INFO_PATH to /home/nick_work/isaacgym/python/isaacgym/_bindings/linux-x86_64/usd/plugInfo.json
+PyTorch version 2.0.0+cu117
+Device count 1
+/home/nick_work/isaacgym/python/isaacgym/_bindings/src/gymtorch
+Using /home/nick_work/.cache/torch_extensions/py38_cu117 as PyTorch extensions root...
+Emitting ninja build file /home/nick_work/.cache/torch_extensions/py38_cu117/gymtorch/build.ninja...
+Building extension module gymtorch...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module gymtorch...
+2025-02-01 23:20:29,451 - INFO - logger - logger initialized
+<unknown>:3: DeprecationWarning: invalid escape sequence \*
+Error: FBX library failed to load - importing FBX data will not succeed. Message: No module named 'fbx'
+FBX tools must be installed from https://help.autodesk.com/view/FBX/2020/ENU/?guid=FBX_Developer_Help_scripting_with_python_fbx_installing_python_fbx_html
+/home/nick_work/Eureka/eureka/../isaacgymenvs/isaacgymenvs/train.py:76: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  @hydra.main(config_name="config", config_path="./cfg")
+/home/nick_work/miniconda3/envs/eureka/lib/python3.8/site-packages/hydra/_internal/defaults_list.py:415: UserWarning: In config: Invalid overriding of hydra/job_logging:
+Default list overrides requires 'override' keyword.
+See https://hydra.cc/docs/1.2/upgrades/1.0_to_1.1/defaults_list_override for more information.
+
+  deprecation_warning(msg)
+/home/nick_work/miniconda3/envs/eureka/lib/python3.8/site-packages/hydra/_internal/hydra.py:119: UserWarning: Future Hydra versions will no longer change working directory at job runtime by default.
+See https://hydra.cc/docs/1.2/upgrades/1.1_to_1.2/changes_to_job_working_dir/ for more information.
+  ret = run_job(
+/home/nick_work/miniconda3/envs/eureka/lib/python3.8/site-packages/torch/utils/tensorboard/__init__.py:4: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if not hasattr(tensorboard, "__version__") or LooseVersion(
+Setting seed: 42
+Network Directory: /home/nick_work/Eureka/eureka/outputs/eureka/2025-02-01_18-54-34/policy-2025-02-01_23-20-30/runs/HumanoidGPT-2025-02-01_23-20-31/nn
+Tensorboard Directory: /home/nick_work/Eureka/eureka/outputs/eureka/2025-02-01_18-54-34/policy-2025-02-01_23-20-30/runs/HumanoidGPT-2025-02-01_23-20-31/summaries
+self.seed = 42
+Started to train
+/home/nick_work/miniconda3/envs/eureka/lib/python3.8/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+[Warning] [carb.gym.plugin] useGpu is set, forcing single scene (0 subscenes)
+Not connected to PVD
++++ Using GPU PhysX
+Physics Engine: PhysX
+Physics Device: cuda:0
+GPU Pipeline: enabled
+/home/nick_work/Eureka/isaacgymenvs/isaacgymenvs/tasks/humanoidgpt.py:126: DeprecationWarning: an integer is required (got type isaacgym._bindings.linux-x86_64.gym_38.DofDriveMode).  Implicit conversion to integers using __int__ is deprecated, and may be removed in a future version of Python.
+  asset_options.default_dof_drive_mode = gymapi.DOF_MODE_NONE
+Box(-1.0, 1.0, (21,), float32) Box(-inf, inf, (108,), float32)
+current training device: cuda:0
+build mlp: 108
+RunningMeanStd:  (1,)
+RunningMeanStd:  (108,)
+fps step: 38589 fps step and policy inference: 31020 fps total: 29225 epoch: 1/1000 frames: 0
+fps step: 76327 fps step and policy inference: 69929 fps total: 63544 epoch: 2/1000 frames: 131072
+fps step: 78015 fps step and policy inference: 71555 fps total: 63055 epoch: 3/1000 frames: 262144
+fps step: 75609 fps step and policy inference: 69347 fps total: 61600 epoch: 4/1000 frames: 393216
+fps step: 79986 fps step and policy inference: 72850 fps total: 65981 epoch: 5/1000 frames: 524288
+fps step: 83284 fps step and policy inference: 75565 fps total: 68504 epoch: 6/1000 frames: 655360
+fps step: 87618 fps step and policy inference: 79524 fps total: 71146 epoch: 7/1000 frames: 786432
+fps step: 86461 fps step and policy inference: 79256 fps total: 70304 epoch: 8/1000 frames: 917504
+fps step: 79904 fps step and policy inference: 72267 fps total: 65352 epoch: 9/1000 frames: 1048576
+fps step: 88048 fps step and policy inference: 80128 fps total: 72310 epoch: 10/1000 frames: 1179648
+fps step: 84007 fps step and policy inference: 76616 fps total: 68401 epoch: 11/1000 frames: 1310720
+fps step: 92701 fps step and policy inference: 84890 fps total: 76216 epoch: 12/1000 frames: 1441792
+fps step: 86492 fps step and policy inference: 79508 fps total: 68965 epoch: 13/1000 frames: 1572864
+fps step: 86123 fps step and policy inference: 78930 fps total: 70619 epoch: 14/1000 frames: 1703936
+fps step: 84891 fps step and policy inference: 77674 fps total: 69650 epoch: 15/1000 frames: 1835008
+fps step: 90590 fps step and policy inference: 83524 fps total: 73474 epoch: 16/1000 frames: 1966080
+fps step: 93068 fps step and policy inference: 85185 fps total: 75370 epoch: 17/1000 frames: 2097152
+fps step: 90563 fps step and policy inference: 80260 fps total: 69877 epoch: 18/1000 frames: 2228224
+fps step: 90526 fps step and policy inference: 82578 fps total: 71281 epoch: 19/1000 frames: 2359296
+fps step: 87214 fps step and policy inference: 78808 fps total: 66883 epoch: 20/1000 frames: 2490368
+fps step: 81672 fps step and policy inference: 73426 fps total: 64747 epoch: 21/1000 frames: 2621440
+fps step: 86355 fps step and policy inference: 76619 fps total: 69360 epoch: 22/1000 frames: 2752512
+fps step: 97497 fps step and policy inference: 86568 fps total: 75662 epoch: 23/1000 frames: 2883584
+fps step: 101899 fps step and policy inference: 91122 fps total: 81131 epoch: 24/1000 frames: 3014656
+fps step: 95015 fps step and policy inference: 81448 fps total: 74075 epoch: 25/1000 frames: 3145728
+fps step: 105094 fps step and policy inference: 95370 fps total: 82468 epoch: 26/1000 frames: 3276800
+fps step: 95426 fps step and policy inference: 84986 fps total: 75147 epoch: 27/1000 frames: 3407872
+fps step: 100070 fps step and policy inference: 90944 fps total: 80600 epoch: 28/1000 frames: 3538944
+fps step: 97111 fps step and policy inference: 87857 fps total: 77591 epoch: 29/1000 frames: 3670016
+fps step: 98394 fps step and policy inference: 88428 fps total: 78460 epoch: 30/1000 frames: 3801088
+fps step: 103070 fps step and policy inference: 92353 fps total: 81556 epoch: 31/1000 frames: 3932160
+fps step: 110999 fps step and policy inference: 101073 fps total: 87356 epoch: 32/1000 frames: 4063232
+fps step: 106273 fps step and policy inference: 95316 fps total: 84191 epoch: 33/1000 frames: 4194304
+fps step: 97329 fps step and policy inference: 88159 fps total: 78161 epoch: 34/1000 frames: 4325376
+fps step: 107883 fps step and policy inference: 97418 fps total: 86880 epoch: 35/1000 frames: 4456448
+fps step: 88543 fps step and policy inference: 80304 fps total: 71574 epoch: 36/1000 frames: 4587520
+fps step: 88810 fps step and policy inference: 79821 fps total: 71019 epoch: 37/1000 frames: 4718592
+fps step: 86336 fps step and policy inference: 77424 fps total: 69669 epoch: 38/1000 frames: 4849664
+fps step: 93339 fps step and policy inference: 85227 fps total: 75297 epoch: 39/1000 frames: 4980736
+fps step: 99243 fps step and policy inference: 89631 fps total: 78913 epoch: 40/1000 frames: 5111808
+fps step: 103550 fps step and policy inference: 94175 fps total: 80636 epoch: 41/1000 frames: 5242880
+fps step: 108035 fps step and policy inference: 97736 fps total: 83532 epoch: 42/1000 frames: 5373952
+fps step: 113451 fps step and policy inference: 102489 fps total: 87867 epoch: 43/1000 frames: 5505024
+fps step: 103084 fps step and policy inference: 91034 fps total: 80204 epoch: 44/1000 frames: 5636096
+fps step: 108737 fps step and policy inference: 96681 fps total: 85513 epoch: 45/1000 frames: 5767168
+fps step: 111512 fps step and policy inference: 98361 fps total: 86437 epoch: 46/1000 frames: 5898240
+fps step: 102151 fps step and policy inference: 91441 fps total: 77456 epoch: 47/1000 frames: 6029312
+fps step: 104534 fps step and policy inference: 93135 fps total: 79063 epoch: 48/1000 frames: 6160384
+fps step: 105658 fps step and policy inference: 93790 fps total: 81414 epoch: 49/1000 frames: 6291456
+fps step: 110930 fps step and policy inference: 99394 fps total: 87367 epoch: 50/1000 frames: 6422528
+fps step: 103886 fps step and policy inference: 91472 fps total: 79280 epoch: 51/1000 frames: 6553600
+fps step: 97626 fps step and policy inference: 85911 fps total: 74612 epoch: 52/1000 frames: 6684672
+fps step: 103018 fps step and policy inference: 91614 fps total: 79535 epoch: 53/1000 frames: 6815744
+fps step: 105723 fps step and policy inference: 93088 fps total: 80594 epoch: 54/1000 frames: 6946816
+fps step: 105607 fps step and policy inference: 94920 fps total: 83601 epoch: 55/1000 frames: 7077888
+fps step: 107562 fps step and policy inference: 94896 fps total: 82839 epoch: 56/1000 frames: 7208960
+fps step: 107869 fps step and policy inference: 94715 fps total: 82359 epoch: 57/1000 frames: 7340032
+fps step: 107590 fps step and policy inference: 95514 fps total: 82498 epoch: 58/1000 frames: 7471104
+fps step: 108494 fps step and policy inference: 96333 fps total: 84422 epoch: 59/1000 frames: 7602176
+fps step: 108396 fps step and policy inference: 97783 fps total: 84096 epoch: 60/1000 frames: 7733248
+fps step: 106147 fps step and policy inference: 96120 fps total: 82531 epoch: 61/1000 frames: 7864320
+fps step: 95633 fps step and policy inference: 81572 fps total: 73011 epoch: 62/1000 frames: 7995392
+fps step: 103523 fps step and policy inference: 92523 fps total: 80634 epoch: 63/1000 frames: 8126464
+fps step: 97417 fps step and policy inference: 85848 fps total: 75676 epoch: 64/1000 frames: 8257536
+fps step: 96374 fps step and policy inference: 85392 fps total: 73756 epoch: 65/1000 frames: 8388608
+fps step: 88667 fps step and policy inference: 78108 fps total: 69504 epoch: 66/1000 frames: 8519680
+fps step: 111603 fps step and policy inference: 101409 fps total: 85560 epoch: 67/1000 frames: 8650752
+fps step: 103232 fps step and policy inference: 94312 fps total: 80912 epoch: 68/1000 frames: 8781824
+fps step: 109885 fps step and policy inference: 100167 fps total: 88179 epoch: 69/1000 frames: 8912896
+fps step: 97973 fps step and policy inference: 86932 fps total: 78301 epoch: 70/1000 frames: 9043968
+fps step: 102611 fps step and policy inference: 92653 fps total: 81783 epoch: 71/1000 frames: 9175040
+fps step: 104574 fps step and policy inference: 93158 fps total: 81294 epoch: 72/1000 frames: 9306112
+fps step: 107012 fps step and policy inference: 94478 fps total: 80661 epoch: 73/1000 frames: 9437184
+fps step: 106092 fps step and policy inference: 93756 fps total: 80395 epoch: 74/1000 frames: 9568256
+fps step: 95090 fps step and policy inference: 85289 fps total: 75290 epoch: 75/1000 frames: 9699328
+fps step: 96947 fps step and policy inference: 84563 fps total: 74500 epoch: 76/1000 frames: 9830400
+fps step: 97106 fps step and policy inference: 87191 fps total: 77446 epoch: 77/1000 frames: 9961472
+fps step: 100841 fps step and policy inference: 90123 fps total: 80396 epoch: 78/1000 frames: 10092544
+fps step: 92780 fps step and policy inference: 82713 fps total: 70687 epoch: 79/1000 frames: 10223616
+fps step: 102399 fps step and policy inference: 89687 fps total: 79773 epoch: 80/1000 frames: 10354688
+fps step: 97196 fps step and policy inference: 84573 fps total: 74760 epoch: 81/1000 frames: 10485760
+fps step: 104746 fps step and policy inference: 93012 fps total: 81366 epoch: 82/1000 frames: 10616832
+fps step: 104815 fps step and policy inference: 94060 fps total: 81490 epoch: 83/1000 frames: 10747904
+fps step: 104476 fps step and policy inference: 93592 fps total: 82791 epoch: 84/1000 frames: 10878976
+fps step: 104648 fps step and policy inference: 93920 fps total: 81052 epoch: 85/1000 frames: 11010048
+fps step: 103901 fps step and policy inference: 94073 fps total: 81689 epoch: 86/1000 frames: 11141120
+fps step: 102136 fps step and policy inference: 91791 fps total: 79818 epoch: 87/1000 frames: 11272192
+fps step: 100758 fps step and policy inference: 89826 fps total: 76450 epoch: 88/1000 frames: 11403264
+fps step: 95505 fps step and policy inference: 84513 fps total: 74175 epoch: 89/1000 frames: 11534336
+fps step: 95692 fps step and policy inference: 84758 fps total: 74114 epoch: 90/1000 frames: 11665408
+fps step: 88425 fps step and policy inference: 78079 fps total: 71057 epoch: 91/1000 frames: 11796480
+fps step: 90048 fps step and policy inference: 79796 fps total: 71958 epoch: 92/1000 frames: 11927552
+fps step: 102875 fps step and policy inference: 92874 fps total: 81315 epoch: 93/1000 frames: 12058624
+fps step: 96902 fps step and policy inference: 86150 fps total: 71353 epoch: 94/1000 frames: 12189696
+fps step: 110140 fps step and policy inference: 100460 fps total: 85443 epoch: 95/1000 frames: 12320768
+fps step: 107173 fps step and policy inference: 97600 fps total: 85088 epoch: 96/1000 frames: 12451840
+fps step: 105459 fps step and policy inference: 94017 fps total: 84080 epoch: 97/1000 frames: 12582912
+fps step: 100586 fps step and policy inference: 90988 fps total: 81346 epoch: 98/1000 frames: 12713984
+fps step: 104155 fps step and policy inference: 95472 fps total: 80565 epoch: 99/1000 frames: 12845056
+fps step: 98535 fps step and policy inference: 88644 fps total: 77670 epoch: 100/1000 frames: 12976128
+fps step: 108049 fps step and policy inference: 98398 fps total: 86548 epoch: 101/1000 frames: 13107200
+fps step: 110619 fps step and policy inference: 101240 fps total: 89668 epoch: 102/1000 frames: 13238272
+fps step: 106179 fps step and policy inference: 95943 fps total: 84621 epoch: 103/1000 frames: 13369344
+fps step: 100971 fps step and policy inference: 87984 fps total: 76886 epoch: 104/1000 frames: 13500416
+fps step: 108305 fps step and policy inference: 98155 fps total: 87164 epoch: 105/1000 frames: 13631488
+fps step: 95208 fps step and policy inference: 85651 fps total: 76435 epoch: 106/1000 frames: 13762560
+fps step: 105285 fps step and policy inference: 95091 fps total: 83322 epoch: 107/1000 frames: 13893632
+fps step: 100773 fps step and policy inference: 90704 fps total: 79633 epoch: 108/1000 frames: 14024704
+fps step: 92815 fps step and policy inference: 80313 fps total: 71532 epoch: 109/1000 frames: 14155776
+fps step: 102446 fps step and policy inference: 90983 fps total: 80141 epoch: 110/1000 frames: 14286848
+fps step: 102933 fps step and policy inference: 91341 fps total: 79889 epoch: 111/1000 frames: 14417920
+fps step: 101511 fps step and policy inference: 92460 fps total: 80846 epoch: 112/1000 frames: 14548992
+fps step: 107918 fps step and policy inference: 98382 fps total: 86255 epoch: 113/1000 frames: 14680064
+fps step: 96072 fps step and policy inference: 85327 fps total: 77281 epoch: 114/1000 frames: 14811136
+fps step: 106028 fps step and policy inference: 97091 fps total: 85697 epoch: 115/1000 frames: 14942208
+fps step: 99285 fps step and policy inference: 89419 fps total: 78899 epoch: 116/1000 frames: 15073280
+fps step: 104830 fps step and policy inference: 94894 fps total: 84460 epoch: 117/1000 frames: 15204352
+fps step: 102099 fps step and policy inference: 92958 fps total: 81631 epoch: 118/1000 frames: 15335424
+fps step: 107565 fps step and policy inference: 98487 fps total: 84594 epoch: 119/1000 frames: 15466496
+fps step: 104114 fps step and policy inference: 94680 fps total: 82273 epoch: 120/1000 frames: 15597568
+fps step: 100725 fps step and policy inference: 91747 fps total: 80691 epoch: 121/1000 frames: 15728640
+fps step: 94427 fps step and policy inference: 82631 fps total: 72733 epoch: 122/1000 frames: 15859712
+fps step: 96076 fps step and policy inference: 87256 fps total: 75890 epoch: 123/1000 frames: 15990784
+fps step: 98794 fps step and policy inference: 90698 fps total: 80643 epoch: 124/1000 frames: 16121856
+fps step: 94135 fps step and policy inference: 84660 fps total: 74416 epoch: 125/1000 frames: 16252928
+fps step: 97936 fps step and policy inference: 89353 fps total: 80173 epoch: 126/1000 frames: 16384000
+fps step: 97386 fps step and policy inference: 87591 fps total: 79145 epoch: 127/1000 frames: 16515072
+fps step: 97583 fps step and policy inference: 88755 fps total: 78822 epoch: 128/1000 frames: 16646144
+fps step: 95821 fps step and policy inference: 86048 fps total: 74524 epoch: 129/1000 frames: 16777216
+fps step: 97115 fps step and policy inference: 86367 fps total: 77300 epoch: 130/1000 frames: 16908288
+fps step: 102481 fps step and policy inference: 96822 fps total: 83491 epoch: 131/1000 frames: 17039360
+fps step: 97626 fps step and policy inference: 85204 fps total: 72702 epoch: 132/1000 frames: 17170432
+fps step: 94085 fps step and policy inference: 83067 fps total: 73150 epoch: 133/1000 frames: 17301504
+fps step: 98365 fps step and policy inference: 87258 fps total: 76365 epoch: 134/1000 frames: 17432576
+fps step: 99965 fps step and policy inference: 86784 fps total: 76994 epoch: 135/1000 frames: 17563648
+fps step: 94833 fps step and policy inference: 85997 fps total: 75786 epoch: 136/1000 frames: 17694720
+fps step: 109844 fps step and policy inference: 100028 fps total: 87871 epoch: 137/1000 frames: 17825792
+fps step: 105295 fps step and policy inference: 93200 fps total: 81221 epoch: 138/1000 frames: 17956864
+fps step: 102196 fps step and policy inference: 88993 fps total: 74789 epoch: 139/1000 frames: 18087936
+fps step: 102657 fps step and policy inference: 91079 fps total: 76595 epoch: 140/1000 frames: 18219008
+fps step: 93665 fps step and policy inference: 81495 fps total: 73023 epoch: 141/1000 frames: 18350080
+fps step: 103292 fps step and policy inference: 93837 fps total: 81435 epoch: 142/1000 frames: 18481152
+fps step: 99144 fps step and policy inference: 89534 fps total: 73873 epoch: 143/1000 frames: 18612224
+fps step: 99149 fps step and policy inference: 86809 fps total: 73835 epoch: 144/1000 frames: 18743296
+fps step: 101493 fps step and policy inference: 88185 fps total: 77454 epoch: 145/1000 frames: 18874368
+fps step: 101395 fps step and policy inference: 88319 fps total: 76917 epoch: 146/1000 frames: 19005440
+fps step: 97830 fps step and policy inference: 84889 fps total: 72970 epoch: 147/1000 frames: 19136512
+fps step: 109019 fps step and policy inference: 94796 fps total: 81080 epoch: 148/1000 frames: 19267584
+fps step: 97873 fps step and policy inference: 85394 fps total: 72879 epoch: 149/1000 frames: 19398656
+fps step: 92591 fps step and policy inference: 79172 fps total: 67811 epoch: 150/1000 frames: 19529728
+fps step: 107231 fps step and policy inference: 96001 fps total: 80218 epoch: 151/1000 frames: 19660800
+fps step: 99779 fps step and policy inference: 87515 fps total: 73433 epoch: 152/1000 frames: 19791872
+fps step: 91937 fps step and policy inference: 77962 fps total: 68435 epoch: 153/1000 frames: 19922944
+fps step: 96110 fps step and policy inference: 82598 fps total: 73801 epoch: 154/1000 frames: 20054016
+fps step: 104075 fps step and policy inference: 93199 fps total: 82894 epoch: 155/1000 frames: 20185088
+fps step: 110283 fps step and policy inference: 99463 fps total: 88136 epoch: 156/1000 frames: 20316160
+fps step: 102322 fps step and policy inference: 90499 fps total: 76790 epoch: 157/1000 frames: 20447232
+fps step: 101000 fps step and policy inference: 92363 fps total: 79736 epoch: 158/1000 frames: 20578304
+fps step: 97642 fps step and policy inference: 85571 fps total: 77273 epoch: 159/1000 frames: 20709376
+fps step: 104979 fps step and policy inference: 96192 fps total: 85331 epoch: 160/1000 frames: 20840448
+fps step: 94152 fps step and policy inference: 85576 fps total: 76543 epoch: 161/1000 frames: 20971520
+fps step: 97486 fps step and policy inference: 87849 fps total: 75860 epoch: 162/1000 frames: 21102592
+fps step: 100954 fps step and policy inference: 92526 fps total: 82324 epoch: 163/1000 frames: 21233664
+fps step: 99350 fps step and policy inference: 89364 fps total: 78687 epoch: 164/1000 frames: 21364736
+fps step: 100263 fps step and policy inference: 90334 fps total: 80706 epoch: 165/1000 frames: 21495808
+fps step: 95181 fps step and policy inference: 85168 fps total: 76747 epoch: 166/1000 frames: 21626880
+fps step: 104024 fps step and policy inference: 92961 fps total: 81464 epoch: 167/1000 frames: 21757952
+fps step: 98062 fps step and policy inference: 88814 fps total: 76978 epoch: 168/1000 frames: 21889024
+fps step: 106825 fps step and policy inference: 94579 fps total: 84284 epoch: 169/1000 frames: 22020096
+fps step: 106064 fps step and policy inference: 95220 fps total: 83370 epoch: 170/1000 frames: 22151168
+fps step: 107424 fps step and policy inference: 97674 fps total: 85451 epoch: 171/1000 frames: 22282240
+fps step: 101291 fps step and policy inference: 92142 fps total: 81464 epoch: 172/1000 frames: 22413312
+fps step: 95437 fps step and policy inference: 85580 fps total: 73907 epoch: 173/1000 frames: 22544384
+fps step: 103305 fps step and policy inference: 91812 fps total: 79384 epoch: 174/1000 frames: 22675456
+fps step: 95147 fps step and policy inference: 83337 fps total: 74338 epoch: 175/1000 frames: 22806528
+fps step: 90531 fps step and policy inference: 79982 fps total: 68861 epoch: 176/1000 frames: 22937600
+fps step: 91333 fps step and policy inference: 77133 fps total: 68682 epoch: 177/1000 frames: 23068672
+fps step: 100274 fps step and policy inference: 90662 fps total: 79814 epoch: 178/1000 frames: 23199744
+fps step: 103444 fps step and policy inference: 92806 fps total: 82470 epoch: 179/1000 frames: 23330816
+fps step: 105181 fps step and policy inference: 92837 fps total: 80867 epoch: 180/1000 frames: 23461888
+fps step: 104852 fps step and policy inference: 95970 fps total: 85927 epoch: 181/1000 frames: 23592960
+fps step: 100429 fps step and policy inference: 90281 fps total: 80069 epoch: 182/1000 frames: 23724032
+fps step: 96279 fps step and policy inference: 84789 fps total: 75612 epoch: 183/1000 frames: 23855104
+fps step: 98920 fps step and policy inference: 90396 fps total: 80653 epoch: 184/1000 frames: 23986176
+fps step: 101893 fps step and policy inference: 91072 fps total: 81555 epoch: 185/1000 frames: 24117248
+fps step: 106224 fps step and policy inference: 95657 fps total: 85070 epoch: 186/1000 frames: 24248320
+fps step: 98684 fps step and policy inference: 88400 fps total: 77659 epoch: 187/1000 frames: 24379392
+fps step: 107937 fps step and policy inference: 97367 fps total: 85356 epoch: 188/1000 frames: 24510464
+fps step: 97668 fps step and policy inference: 89908 fps total: 79748 epoch: 189/1000 frames: 24641536
+fps step: 101657 fps step and policy inference: 92880 fps total: 82851 epoch: 190/1000 frames: 24772608
+fps step: 95248 fps step and policy inference: 85186 fps total: 76441 epoch: 191/1000 frames: 24903680
+fps step: 103935 fps step and policy inference: 93286 fps total: 82429 epoch: 192/1000 frames: 25034752
+fps step: 106989 fps step and policy inference: 97543 fps total: 85448 epoch: 193/1000 frames: 25165824
+fps step: 94342 fps step and policy inference: 81560 fps total: 73658 epoch: 194/1000 frames: 25296896
+fps step: 103284 fps step and policy inference: 92152 fps total: 80471 epoch: 195/1000 frames: 25427968
+fps step: 98083 fps step and policy inference: 89362 fps total: 78635 epoch: 196/1000 frames: 25559040
+fps step: 99869 fps step and policy inference: 89381 fps total: 77255 epoch: 197/1000 frames: 25690112
+fps step: 90212 fps step and policy inference: 79674 fps total: 71069 epoch: 198/1000 frames: 25821184
+fps step: 95492 fps step and policy inference: 84845 fps total: 73368 epoch: 199/1000 frames: 25952256
+fps step: 95897 fps step and policy inference: 85277 fps total: 76451 epoch: 200/1000 frames: 26083328
+saving next best successes:  2.6517315
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 105212 fps step and policy inference: 93470 fps total: 81174 epoch: 201/1000 frames: 26214400
+saving next best successes:  2.6990976
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99943 fps step and policy inference: 90930 fps total: 78840 epoch: 202/1000 frames: 26345472
+fps step: 97341 fps step and policy inference: 82914 fps total: 72305 epoch: 203/1000 frames: 26476544
+fps step: 101105 fps step and policy inference: 88918 fps total: 79783 epoch: 204/1000 frames: 26607616
+fps step: 108759 fps step and policy inference: 95273 fps total: 83757 epoch: 205/1000 frames: 26738688
+saving next best successes:  2.6993628
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 102574 fps step and policy inference: 91629 fps total: 80267 epoch: 206/1000 frames: 26869760
+fps step: 97492 fps step and policy inference: 88567 fps total: 79825 epoch: 207/1000 frames: 27000832
+saving next best successes:  2.7044058
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 101024 fps step and policy inference: 92007 fps total: 79521 epoch: 208/1000 frames: 27131904
+saving next best successes:  2.7150507
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 101864 fps step and policy inference: 90729 fps total: 76485 epoch: 209/1000 frames: 27262976
+fps step: 100549 fps step and policy inference: 90950 fps total: 81326 epoch: 210/1000 frames: 27394048
+fps step: 107084 fps step and policy inference: 97334 fps total: 85620 epoch: 211/1000 frames: 27525120
+fps step: 98975 fps step and policy inference: 88277 fps total: 78887 epoch: 212/1000 frames: 27656192
+fps step: 94944 fps step and policy inference: 82494 fps total: 73985 epoch: 213/1000 frames: 27787264
+fps step: 96728 fps step and policy inference: 87709 fps total: 78213 epoch: 214/1000 frames: 27918336
+saving next best successes:  2.7167282
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98244 fps step and policy inference: 88341 fps total: 78790 epoch: 215/1000 frames: 28049408
+fps step: 98795 fps step and policy inference: 89014 fps total: 77103 epoch: 216/1000 frames: 28180480
+saving next best successes:  2.7255716
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 97671 fps step and policy inference: 85556 fps total: 76326 epoch: 217/1000 frames: 28311552
+saving next best successes:  2.7351475
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94415 fps step and policy inference: 84510 fps total: 70098 epoch: 218/1000 frames: 28442624
+fps step: 96111 fps step and policy inference: 85751 fps total: 75341 epoch: 219/1000 frames: 28573696
+saving next best successes:  2.7577448
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96124 fps step and policy inference: 82280 fps total: 73248 epoch: 220/1000 frames: 28704768
+fps step: 92839 fps step and policy inference: 82888 fps total: 73599 epoch: 221/1000 frames: 28835840
+fps step: 101337 fps step and policy inference: 90808 fps total: 79966 epoch: 222/1000 frames: 28966912
+fps step: 92647 fps step and policy inference: 80199 fps total: 66844 epoch: 223/1000 frames: 29097984
+saving next best successes:  2.7603216
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 90822 fps step and policy inference: 75284 fps total: 65857 epoch: 224/1000 frames: 29229056
+fps step: 97405 fps step and policy inference: 86643 fps total: 76755 epoch: 225/1000 frames: 29360128
+fps step: 97948 fps step and policy inference: 84800 fps total: 75081 epoch: 226/1000 frames: 29491200
+fps step: 94985 fps step and policy inference: 82124 fps total: 70064 epoch: 227/1000 frames: 29622272
+saving next best successes:  2.76729
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 102696 fps step and policy inference: 91569 fps total: 77900 epoch: 228/1000 frames: 29753344
+fps step: 106179 fps step and policy inference: 93804 fps total: 82642 epoch: 229/1000 frames: 29884416
+saving next best successes:  2.7794714
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 101080 fps step and policy inference: 91304 fps total: 80949 epoch: 230/1000 frames: 30015488
+fps step: 97726 fps step and policy inference: 87899 fps total: 74456 epoch: 231/1000 frames: 30146560
+fps step: 84124 fps step and policy inference: 74252 fps total: 63712 epoch: 232/1000 frames: 30277632
+fps step: 92189 fps step and policy inference: 81758 fps total: 73148 epoch: 233/1000 frames: 30408704
+fps step: 102141 fps step and policy inference: 92331 fps total: 81485 epoch: 234/1000 frames: 30539776
+saving next best successes:  2.7935028
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94831 fps step and policy inference: 85380 fps total: 75234 epoch: 235/1000 frames: 30670848
+fps step: 98325 fps step and policy inference: 88103 fps total: 78104 epoch: 236/1000 frames: 30801920
+saving next best successes:  2.8096495
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96751 fps step and policy inference: 87309 fps total: 76035 epoch: 237/1000 frames: 30932992
+fps step: 101326 fps step and policy inference: 91879 fps total: 81275 epoch: 238/1000 frames: 31064064
+fps step: 99270 fps step and policy inference: 90148 fps total: 78096 epoch: 239/1000 frames: 31195136
+fps step: 103266 fps step and policy inference: 92641 fps total: 82254 epoch: 240/1000 frames: 31326208
+fps step: 97512 fps step and policy inference: 87446 fps total: 78221 epoch: 241/1000 frames: 31457280
+fps step: 100120 fps step and policy inference: 84116 fps total: 73732 epoch: 242/1000 frames: 31588352
+fps step: 102596 fps step and policy inference: 91837 fps total: 79074 epoch: 243/1000 frames: 31719424
+fps step: 94901 fps step and policy inference: 85357 fps total: 76650 epoch: 244/1000 frames: 31850496
+fps step: 94994 fps step and policy inference: 84961 fps total: 74594 epoch: 245/1000 frames: 31981568
+fps step: 98311 fps step and policy inference: 88822 fps total: 79384 epoch: 246/1000 frames: 32112640
+fps step: 103115 fps step and policy inference: 92949 fps total: 80369 epoch: 247/1000 frames: 32243712
+fps step: 85491 fps step and policy inference: 74991 fps total: 67290 epoch: 248/1000 frames: 32374784
+fps step: 100252 fps step and policy inference: 90707 fps total: 79052 epoch: 249/1000 frames: 32505856
+saving next best successes:  2.8128862
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 77910 fps step and policy inference: 68958 fps total: 60628 epoch: 250/1000 frames: 32636928
+fps step: 89254 fps step and policy inference: 78459 fps total: 69750 epoch: 251/1000 frames: 32768000
+saving next best successes:  2.835929
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 91513 fps step and policy inference: 81336 fps total: 70955 epoch: 252/1000 frames: 32899072
+fps step: 110008 fps step and policy inference: 98076 fps total: 85437 epoch: 253/1000 frames: 33030144
+fps step: 95827 fps step and policy inference: 86772 fps total: 74639 epoch: 254/1000 frames: 33161216
+fps step: 93418 fps step and policy inference: 84305 fps total: 73594 epoch: 255/1000 frames: 33292288
+fps step: 92662 fps step and policy inference: 81892 fps total: 66443 epoch: 256/1000 frames: 33423360
+saving next best successes:  2.8486557
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94983 fps step and policy inference: 83893 fps total: 72997 epoch: 257/1000 frames: 33554432
+fps step: 95855 fps step and policy inference: 86855 fps total: 75934 epoch: 258/1000 frames: 33685504
+fps step: 88570 fps step and policy inference: 79431 fps total: 68006 epoch: 259/1000 frames: 33816576
+fps step: 94265 fps step and policy inference: 83211 fps total: 73240 epoch: 260/1000 frames: 33947648
+fps step: 100779 fps step and policy inference: 90221 fps total: 80491 epoch: 261/1000 frames: 34078720
+saving next best successes:  2.8534832
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95377 fps step and policy inference: 84117 fps total: 74877 epoch: 262/1000 frames: 34209792
+fps step: 88270 fps step and policy inference: 76715 fps total: 67365 epoch: 263/1000 frames: 34340864
+saving next best successes:  2.9037418
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 92430 fps step and policy inference: 81839 fps total: 68056 epoch: 264/1000 frames: 34471936
+fps step: 86803 fps step and policy inference: 78293 fps total: 68557 epoch: 265/1000 frames: 34603008
+fps step: 88971 fps step and policy inference: 79164 fps total: 71559 epoch: 266/1000 frames: 34734080
+fps step: 97780 fps step and policy inference: 87381 fps total: 76193 epoch: 267/1000 frames: 34865152
+fps step: 89933 fps step and policy inference: 81037 fps total: 72232 epoch: 268/1000 frames: 34996224
+fps step: 99568 fps step and policy inference: 88768 fps total: 79900 epoch: 269/1000 frames: 35127296
+fps step: 102165 fps step and policy inference: 91829 fps total: 78994 epoch: 270/1000 frames: 35258368
+fps step: 109354 fps step and policy inference: 98824 fps total: 86884 epoch: 271/1000 frames: 35389440
+fps step: 103430 fps step and policy inference: 93914 fps total: 81115 epoch: 272/1000 frames: 35520512
+fps step: 100592 fps step and policy inference: 89204 fps total: 74558 epoch: 273/1000 frames: 35651584
+fps step: 95342 fps step and policy inference: 86845 fps total: 75742 epoch: 274/1000 frames: 35782656
+fps step: 98161 fps step and policy inference: 89508 fps total: 79952 epoch: 275/1000 frames: 35913728
+fps step: 87653 fps step and policy inference: 79643 fps total: 68474 epoch: 276/1000 frames: 36044800
+fps step: 97101 fps step and policy inference: 88883 fps total: 79417 epoch: 277/1000 frames: 36175872
+fps step: 90420 fps step and policy inference: 81597 fps total: 71605 epoch: 278/1000 frames: 36306944
+fps step: 92296 fps step and policy inference: 84784 fps total: 75767 epoch: 279/1000 frames: 36438016
+fps step: 96691 fps step and policy inference: 87996 fps total: 78538 epoch: 280/1000 frames: 36569088
+fps step: 92215 fps step and policy inference: 84006 fps total: 74227 epoch: 281/1000 frames: 36700160
+saving next best successes:  2.9107056
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 87971 fps step and policy inference: 78186 fps total: 68899 epoch: 282/1000 frames: 36831232
+fps step: 91120 fps step and policy inference: 80024 fps total: 69543 epoch: 283/1000 frames: 36962304
+fps step: 92051 fps step and policy inference: 82571 fps total: 72657 epoch: 284/1000 frames: 37093376
+fps step: 90834 fps step and policy inference: 82525 fps total: 72460 epoch: 285/1000 frames: 37224448
+fps step: 100410 fps step and policy inference: 90525 fps total: 75185 epoch: 286/1000 frames: 37355520
+fps step: 97166 fps step and policy inference: 85012 fps total: 75066 epoch: 287/1000 frames: 37486592
+fps step: 103745 fps step and policy inference: 90973 fps total: 79716 epoch: 288/1000 frames: 37617664
+fps step: 105056 fps step and policy inference: 92794 fps total: 81776 epoch: 289/1000 frames: 37748736
+fps step: 103412 fps step and policy inference: 94122 fps total: 81931 epoch: 290/1000 frames: 37879808
+fps step: 98700 fps step and policy inference: 89764 fps total: 76744 epoch: 291/1000 frames: 38010880
+fps step: 99727 fps step and policy inference: 90094 fps total: 78159 epoch: 292/1000 frames: 38141952
+fps step: 95047 fps step and policy inference: 83456 fps total: 71994 epoch: 293/1000 frames: 38273024
+fps step: 91290 fps step and policy inference: 81867 fps total: 72619 epoch: 294/1000 frames: 38404096
+fps step: 106941 fps step and policy inference: 97240 fps total: 84803 epoch: 295/1000 frames: 38535168
+saving next best successes:  2.9445238
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94393 fps step and policy inference: 84826 fps total: 73381 epoch: 296/1000 frames: 38666240
+fps step: 95866 fps step and policy inference: 86616 fps total: 77525 epoch: 297/1000 frames: 38797312
+fps step: 98218 fps step and policy inference: 90089 fps total: 79289 epoch: 298/1000 frames: 38928384
+fps step: 88829 fps step and policy inference: 80178 fps total: 70527 epoch: 299/1000 frames: 39059456
+fps step: 93787 fps step and policy inference: 84465 fps total: 73565 epoch: 300/1000 frames: 39190528
+fps step: 95151 fps step and policy inference: 85804 fps total: 77251 epoch: 301/1000 frames: 39321600
+saving next best successes:  2.9576483
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94117 fps step and policy inference: 85022 fps total: 73973 epoch: 302/1000 frames: 39452672
+fps step: 96243 fps step and policy inference: 85506 fps total: 74936 epoch: 303/1000 frames: 39583744
+fps step: 99231 fps step and policy inference: 87322 fps total: 76770 epoch: 304/1000 frames: 39714816
+saving next best successes:  2.978469
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95519 fps step and policy inference: 86317 fps total: 77526 epoch: 305/1000 frames: 39845888
+fps step: 96333 fps step and policy inference: 87489 fps total: 78172 epoch: 306/1000 frames: 39976960
+fps step: 97749 fps step and policy inference: 87206 fps total: 74766 epoch: 307/1000 frames: 40108032
+fps step: 91783 fps step and policy inference: 82910 fps total: 74713 epoch: 308/1000 frames: 40239104
+fps step: 99951 fps step and policy inference: 86739 fps total: 75595 epoch: 309/1000 frames: 40370176
+fps step: 92109 fps step and policy inference: 81939 fps total: 72398 epoch: 310/1000 frames: 40501248
+fps step: 92232 fps step and policy inference: 83417 fps total: 72028 epoch: 311/1000 frames: 40632320
+fps step: 101827 fps step and policy inference: 92791 fps total: 80122 epoch: 312/1000 frames: 40763392
+saving next best successes:  2.9785376
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 97754 fps step and policy inference: 89883 fps total: 79163 epoch: 313/1000 frames: 40894464
+saving next best successes:  2.9824095
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 101774 fps step and policy inference: 92339 fps total: 82432 epoch: 314/1000 frames: 41025536
+fps step: 104453 fps step and policy inference: 95295 fps total: 83249 epoch: 315/1000 frames: 41156608
+fps step: 98923 fps step and policy inference: 89428 fps total: 79347 epoch: 316/1000 frames: 41287680
+fps step: 93489 fps step and policy inference: 84441 fps total: 75574 epoch: 317/1000 frames: 41418752
+fps step: 100870 fps step and policy inference: 90519 fps total: 74876 epoch: 318/1000 frames: 41549824
+fps step: 98307 fps step and policy inference: 87247 fps total: 77760 epoch: 319/1000 frames: 41680896
+saving next best successes:  3.0192766
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 93496 fps step and policy inference: 85348 fps total: 76670 epoch: 320/1000 frames: 41811968
+fps step: 105203 fps step and policy inference: 93931 fps total: 79463 epoch: 321/1000 frames: 41943040
+fps step: 101125 fps step and policy inference: 92234 fps total: 80808 epoch: 322/1000 frames: 42074112
+fps step: 95832 fps step and policy inference: 87320 fps total: 72589 epoch: 323/1000 frames: 42205184
+fps step: 94919 fps step and policy inference: 85597 fps total: 75046 epoch: 324/1000 frames: 42336256
+saving next best successes:  3.0659742
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 103207 fps step and policy inference: 94622 fps total: 83564 epoch: 325/1000 frames: 42467328
+fps step: 88169 fps step and policy inference: 78696 fps total: 71556 epoch: 326/1000 frames: 42598400
+fps step: 88530 fps step and policy inference: 77836 fps total: 68653 epoch: 327/1000 frames: 42729472
+fps step: 103879 fps step and policy inference: 93828 fps total: 80850 epoch: 328/1000 frames: 42860544
+fps step: 109618 fps step and policy inference: 100460 fps total: 89520 epoch: 329/1000 frames: 42991616
+fps step: 102532 fps step and policy inference: 92490 fps total: 82244 epoch: 330/1000 frames: 43122688
+fps step: 100742 fps step and policy inference: 92310 fps total: 77935 epoch: 331/1000 frames: 43253760
+fps step: 96458 fps step and policy inference: 87753 fps total: 76589 epoch: 332/1000 frames: 43384832
+fps step: 93240 fps step and policy inference: 82762 fps total: 74085 epoch: 333/1000 frames: 43515904
+fps step: 92513 fps step and policy inference: 81616 fps total: 73407 epoch: 334/1000 frames: 43646976
+fps step: 92063 fps step and policy inference: 81249 fps total: 70733 epoch: 335/1000 frames: 43778048
+fps step: 98024 fps step and policy inference: 86121 fps total: 73963 epoch: 336/1000 frames: 43909120
+fps step: 92691 fps step and policy inference: 82939 fps total: 72348 epoch: 337/1000 frames: 44040192
+fps step: 80374 fps step and policy inference: 71867 fps total: 62547 epoch: 338/1000 frames: 44171264
+saving next best successes:  3.074686
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 83879 fps step and policy inference: 75509 fps total: 63827 epoch: 339/1000 frames: 44302336
+fps step: 90152 fps step and policy inference: 79564 fps total: 72147 epoch: 340/1000 frames: 44433408
+fps step: 94980 fps step and policy inference: 86703 fps total: 73773 epoch: 341/1000 frames: 44564480
+saving next best successes:  3.0806274
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 92180 fps step and policy inference: 83260 fps total: 72273 epoch: 342/1000 frames: 44695552
+saving next best successes:  3.0932817
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 92415 fps step and policy inference: 83776 fps total: 72824 epoch: 343/1000 frames: 44826624
+saving next best successes:  3.1160135
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 87626 fps step and policy inference: 79050 fps total: 67030 epoch: 344/1000 frames: 44957696
+fps step: 79572 fps step and policy inference: 70049 fps total: 62066 epoch: 345/1000 frames: 45088768
+fps step: 91053 fps step and policy inference: 82599 fps total: 72248 epoch: 346/1000 frames: 45219840
+fps step: 85774 fps step and policy inference: 75692 fps total: 67530 epoch: 347/1000 frames: 45350912
+fps step: 80666 fps step and policy inference: 70865 fps total: 57766 epoch: 348/1000 frames: 45481984
+fps step: 75868 fps step and policy inference: 65738 fps total: 56845 epoch: 349/1000 frames: 45613056
+saving next best successes:  3.1253233
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 84187 fps step and policy inference: 75793 fps total: 67688 epoch: 350/1000 frames: 45744128
+fps step: 87248 fps step and policy inference: 78111 fps total: 69477 epoch: 351/1000 frames: 45875200
+fps step: 93069 fps step and policy inference: 82345 fps total: 74413 epoch: 352/1000 frames: 46006272
+saving next best successes:  3.1399984
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95067 fps step and policy inference: 85300 fps total: 74191 epoch: 353/1000 frames: 46137344
+fps step: 92153 fps step and policy inference: 83006 fps total: 73382 epoch: 354/1000 frames: 46268416
+fps step: 91767 fps step and policy inference: 80986 fps total: 71345 epoch: 355/1000 frames: 46399488
+saving next best successes:  3.1696014
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98651 fps step and policy inference: 88923 fps total: 77935 epoch: 356/1000 frames: 46530560
+fps step: 90907 fps step and policy inference: 80956 fps total: 68000 epoch: 357/1000 frames: 46661632
+fps step: 87842 fps step and policy inference: 76570 fps total: 61946 epoch: 358/1000 frames: 46792704
+fps step: 90504 fps step and policy inference: 78479 fps total: 69128 epoch: 359/1000 frames: 46923776
+fps step: 90527 fps step and policy inference: 80778 fps total: 68223 epoch: 360/1000 frames: 47054848
+saving next best successes:  3.176097
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 83522 fps step and policy inference: 72690 fps total: 65287 epoch: 361/1000 frames: 47185920
+fps step: 90486 fps step and policy inference: 80540 fps total: 71265 epoch: 362/1000 frames: 47316992
+fps step: 91952 fps step and policy inference: 81561 fps total: 72770 epoch: 363/1000 frames: 47448064
+fps step: 91420 fps step and policy inference: 82025 fps total: 73020 epoch: 364/1000 frames: 47579136
+fps step: 89784 fps step and policy inference: 79628 fps total: 69391 epoch: 365/1000 frames: 47710208
+fps step: 90777 fps step and policy inference: 80254 fps total: 70718 epoch: 366/1000 frames: 47841280
+saving next best successes:  3.1797752
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94664 fps step and policy inference: 86277 fps total: 76532 epoch: 367/1000 frames: 47972352
+fps step: 88541 fps step and policy inference: 78576 fps total: 70877 epoch: 368/1000 frames: 48103424
+fps step: 93672 fps step and policy inference: 85558 fps total: 74640 epoch: 369/1000 frames: 48234496
+saving next best successes:  3.2139711
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98096 fps step and policy inference: 88014 fps total: 78391 epoch: 370/1000 frames: 48365568
+fps step: 101333 fps step and policy inference: 91836 fps total: 81341 epoch: 371/1000 frames: 48496640
+fps step: 105891 fps step and policy inference: 96229 fps total: 81489 epoch: 372/1000 frames: 48627712
+saving next best successes:  3.235775
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99697 fps step and policy inference: 88150 fps total: 77708 epoch: 373/1000 frames: 48758784
+fps step: 96410 fps step and policy inference: 85036 fps total: 74933 epoch: 374/1000 frames: 48889856
+fps step: 98488 fps step and policy inference: 88055 fps total: 78607 epoch: 375/1000 frames: 49020928
+fps step: 93876 fps step and policy inference: 85315 fps total: 75695 epoch: 376/1000 frames: 49152000
+fps step: 101450 fps step and policy inference: 91175 fps total: 80507 epoch: 377/1000 frames: 49283072
+fps step: 95339 fps step and policy inference: 85335 fps total: 75745 epoch: 378/1000 frames: 49414144
+fps step: 100140 fps step and policy inference: 90103 fps total: 79831 epoch: 379/1000 frames: 49545216
+saving next best successes:  3.2483292
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96470 fps step and policy inference: 87191 fps total: 77625 epoch: 380/1000 frames: 49676288
+fps step: 95921 fps step and policy inference: 87287 fps total: 74739 epoch: 381/1000 frames: 49807360
+fps step: 92599 fps step and policy inference: 81913 fps total: 71040 epoch: 382/1000 frames: 49938432
+saving next best successes:  3.2723866
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 101950 fps step and policy inference: 91629 fps total: 79199 epoch: 383/1000 frames: 50069504
+fps step: 101625 fps step and policy inference: 92275 fps total: 81038 epoch: 384/1000 frames: 50200576
+fps step: 101763 fps step and policy inference: 90455 fps total: 80617 epoch: 385/1000 frames: 50331648
+fps step: 95935 fps step and policy inference: 86472 fps total: 76462 epoch: 386/1000 frames: 50462720
+fps step: 104874 fps step and policy inference: 93589 fps total: 82579 epoch: 387/1000 frames: 50593792
+fps step: 94966 fps step and policy inference: 86480 fps total: 74935 epoch: 388/1000 frames: 50724864
+fps step: 98178 fps step and policy inference: 87934 fps total: 78598 epoch: 389/1000 frames: 50855936
+fps step: 100920 fps step and policy inference: 90513 fps total: 79806 epoch: 390/1000 frames: 50987008
+fps step: 93219 fps step and policy inference: 83813 fps total: 73607 epoch: 391/1000 frames: 51118080
+fps step: 97497 fps step and policy inference: 86435 fps total: 77167 epoch: 392/1000 frames: 51249152
+fps step: 110158 fps step and policy inference: 99827 fps total: 86721 epoch: 393/1000 frames: 51380224
+fps step: 89884 fps step and policy inference: 79103 fps total: 69948 epoch: 394/1000 frames: 51511296
+fps step: 105205 fps step and policy inference: 95939 fps total: 81697 epoch: 395/1000 frames: 51642368
+fps step: 99206 fps step and policy inference: 89310 fps total: 80080 epoch: 396/1000 frames: 51773440
+saving next best successes:  3.304411
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 110466 fps step and policy inference: 100714 fps total: 88901 epoch: 397/1000 frames: 51904512
+fps step: 107501 fps step and policy inference: 98558 fps total: 85578 epoch: 398/1000 frames: 52035584
+fps step: 100958 fps step and policy inference: 92395 fps total: 82324 epoch: 399/1000 frames: 52166656
+fps step: 101710 fps step and policy inference: 91614 fps total: 77741 epoch: 400/1000 frames: 52297728
+fps step: 105930 fps step and policy inference: 95990 fps total: 83982 epoch: 401/1000 frames: 52428800
+fps step: 97599 fps step and policy inference: 88816 fps total: 76946 epoch: 402/1000 frames: 52559872
+saving next best successes:  3.3087673
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 101428 fps step and policy inference: 90951 fps total: 78620 epoch: 403/1000 frames: 52690944
+saving next best successes:  3.3535395
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99198 fps step and policy inference: 88486 fps total: 75026 epoch: 404/1000 frames: 52822016
+fps step: 110388 fps step and policy inference: 98658 fps total: 84327 epoch: 405/1000 frames: 52953088
+fps step: 96744 fps step and policy inference: 85794 fps total: 75754 epoch: 406/1000 frames: 53084160
+fps step: 92754 fps step and policy inference: 83250 fps total: 74459 epoch: 407/1000 frames: 53215232
+fps step: 92686 fps step and policy inference: 83473 fps total: 72145 epoch: 408/1000 frames: 53346304
+fps step: 98967 fps step and policy inference: 88175 fps total: 76936 epoch: 409/1000 frames: 53477376
+saving next best successes:  3.35491
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 92468 fps step and policy inference: 83299 fps total: 74719 epoch: 410/1000 frames: 53608448
+fps step: 101777 fps step and policy inference: 90527 fps total: 79594 epoch: 411/1000 frames: 53739520
+fps step: 108408 fps step and policy inference: 97282 fps total: 81712 epoch: 412/1000 frames: 53870592
+fps step: 103492 fps step and policy inference: 94821 fps total: 82843 epoch: 413/1000 frames: 54001664
+saving next best successes:  3.3567085
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99848 fps step and policy inference: 90116 fps total: 79552 epoch: 414/1000 frames: 54132736
+fps step: 101028 fps step and policy inference: 90897 fps total: 73773 epoch: 415/1000 frames: 54263808
+fps step: 98217 fps step and policy inference: 89224 fps total: 74353 epoch: 416/1000 frames: 54394880
+saving next best successes:  3.359189
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 102610 fps step and policy inference: 90849 fps total: 80578 epoch: 417/1000 frames: 54525952
+fps step: 93932 fps step and policy inference: 85836 fps total: 74648 epoch: 418/1000 frames: 54657024
+fps step: 98363 fps step and policy inference: 89433 fps total: 75955 epoch: 419/1000 frames: 54788096
+saving next best successes:  3.3610363
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 103801 fps step and policy inference: 94101 fps total: 83016 epoch: 420/1000 frames: 54919168
+fps step: 104361 fps step and policy inference: 93555 fps total: 82004 epoch: 421/1000 frames: 55050240
+fps step: 93499 fps step and policy inference: 84250 fps total: 76596 epoch: 422/1000 frames: 55181312
+fps step: 95283 fps step and policy inference: 86496 fps total: 76231 epoch: 423/1000 frames: 55312384
+saving next best successes:  3.3735342
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99400 fps step and policy inference: 89776 fps total: 76185 epoch: 424/1000 frames: 55443456
+fps step: 96756 fps step and policy inference: 87240 fps total: 74627 epoch: 425/1000 frames: 55574528
+fps step: 92072 fps step and policy inference: 82112 fps total: 71131 epoch: 426/1000 frames: 55705600
+fps step: 101089 fps step and policy inference: 88273 fps total: 77587 epoch: 427/1000 frames: 55836672
+fps step: 105079 fps step and policy inference: 94606 fps total: 81877 epoch: 428/1000 frames: 55967744
+saving next best successes:  3.3914776
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 102825 fps step and policy inference: 92037 fps total: 82545 epoch: 429/1000 frames: 56098816
+fps step: 108502 fps step and policy inference: 98495 fps total: 86738 epoch: 430/1000 frames: 56229888
+saving next best successes:  3.4080067
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 103602 fps step and policy inference: 94060 fps total: 82461 epoch: 431/1000 frames: 56360960
+fps step: 94100 fps step and policy inference: 83896 fps total: 73012 epoch: 432/1000 frames: 56492032
+fps step: 96567 fps step and policy inference: 87495 fps total: 76393 epoch: 433/1000 frames: 56623104
+fps step: 84740 fps step and policy inference: 73385 fps total: 65023 epoch: 434/1000 frames: 56754176
+fps step: 96413 fps step and policy inference: 86061 fps total: 73470 epoch: 435/1000 frames: 56885248
+fps step: 91959 fps step and policy inference: 83110 fps total: 73599 epoch: 436/1000 frames: 57016320
+fps step: 91323 fps step and policy inference: 81884 fps total: 70983 epoch: 437/1000 frames: 57147392
+saving next best successes:  3.4093428
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98073 fps step and policy inference: 88847 fps total: 75029 epoch: 438/1000 frames: 57278464
+fps step: 93180 fps step and policy inference: 83291 fps total: 71220 epoch: 439/1000 frames: 57409536
+saving next best successes:  3.4098234
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 97755 fps step and policy inference: 89138 fps total: 79178 epoch: 440/1000 frames: 57540608
+fps step: 96843 fps step and policy inference: 88207 fps total: 76952 epoch: 441/1000 frames: 57671680
+saving next best successes:  3.426488
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 97523 fps step and policy inference: 88254 fps total: 74810 epoch: 442/1000 frames: 57802752
+fps step: 102365 fps step and policy inference: 92314 fps total: 76752 epoch: 443/1000 frames: 57933824
+fps step: 107761 fps step and policy inference: 98677 fps total: 86038 epoch: 444/1000 frames: 58064896
+fps step: 96979 fps step and policy inference: 86619 fps total: 77389 epoch: 445/1000 frames: 58195968
+fps step: 96193 fps step and policy inference: 86343 fps total: 76809 epoch: 446/1000 frames: 58327040
+fps step: 96697 fps step and policy inference: 87121 fps total: 75049 epoch: 447/1000 frames: 58458112
+fps step: 95377 fps step and policy inference: 85736 fps total: 73777 epoch: 448/1000 frames: 58589184
+fps step: 85143 fps step and policy inference: 75533 fps total: 65685 epoch: 449/1000 frames: 58720256
+fps step: 85103 fps step and policy inference: 76673 fps total: 68190 epoch: 450/1000 frames: 58851328
+saving next best successes:  3.4397907
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 83801 fps step and policy inference: 72272 fps total: 65634 epoch: 451/1000 frames: 58982400
+fps step: 98267 fps step and policy inference: 89491 fps total: 77674 epoch: 452/1000 frames: 59113472
+fps step: 97241 fps step and policy inference: 87048 fps total: 75360 epoch: 453/1000 frames: 59244544
+fps step: 95227 fps step and policy inference: 83770 fps total: 75223 epoch: 454/1000 frames: 59375616
+fps step: 99739 fps step and policy inference: 89784 fps total: 73042 epoch: 455/1000 frames: 59506688
+fps step: 94730 fps step and policy inference: 84270 fps total: 76504 epoch: 456/1000 frames: 59637760
+fps step: 91889 fps step and policy inference: 82193 fps total: 72083 epoch: 457/1000 frames: 59768832
+saving next best successes:  3.4453945
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 104140 fps step and policy inference: 93899 fps total: 81482 epoch: 458/1000 frames: 59899904
+fps step: 104500 fps step and policy inference: 93199 fps total: 79716 epoch: 459/1000 frames: 60030976
+fps step: 96928 fps step and policy inference: 86684 fps total: 74323 epoch: 460/1000 frames: 60162048
+saving next best successes:  3.4566517
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 81970 fps step and policy inference: 74106 fps total: 64847 epoch: 461/1000 frames: 60293120
+fps step: 91634 fps step and policy inference: 82565 fps total: 70694 epoch: 462/1000 frames: 60424192
+fps step: 88437 fps step and policy inference: 77278 fps total: 68570 epoch: 463/1000 frames: 60555264
+fps step: 97139 fps step and policy inference: 87413 fps total: 75798 epoch: 464/1000 frames: 60686336
+fps step: 91098 fps step and policy inference: 82833 fps total: 73012 epoch: 465/1000 frames: 60817408
+fps step: 74549 fps step and policy inference: 66462 fps total: 58333 epoch: 466/1000 frames: 60948480
+fps step: 80603 fps step and policy inference: 71447 fps total: 63136 epoch: 467/1000 frames: 61079552
+fps step: 80073 fps step and policy inference: 70604 fps total: 62907 epoch: 468/1000 frames: 61210624
+fps step: 95448 fps step and policy inference: 86399 fps total: 72689 epoch: 469/1000 frames: 61341696
+fps step: 85568 fps step and policy inference: 74982 fps total: 64106 epoch: 470/1000 frames: 61472768
+fps step: 89182 fps step and policy inference: 78659 fps total: 70287 epoch: 471/1000 frames: 61603840
+fps step: 88826 fps step and policy inference: 78243 fps total: 70534 epoch: 472/1000 frames: 61734912
+fps step: 91144 fps step and policy inference: 81508 fps total: 73449 epoch: 473/1000 frames: 61865984
+fps step: 95739 fps step and policy inference: 86470 fps total: 77144 epoch: 474/1000 frames: 61997056
+fps step: 94551 fps step and policy inference: 85146 fps total: 75082 epoch: 475/1000 frames: 62128128
+fps step: 99525 fps step and policy inference: 88810 fps total: 78833 epoch: 476/1000 frames: 62259200
+fps step: 102294 fps step and policy inference: 92519 fps total: 80100 epoch: 477/1000 frames: 62390272
+fps step: 111548 fps step and policy inference: 99855 fps total: 88163 epoch: 478/1000 frames: 62521344
+fps step: 102208 fps step and policy inference: 91799 fps total: 79472 epoch: 479/1000 frames: 62652416
+fps step: 105539 fps step and policy inference: 95603 fps total: 75927 epoch: 480/1000 frames: 62783488
+fps step: 100688 fps step and policy inference: 88514 fps total: 74862 epoch: 481/1000 frames: 62914560
+fps step: 102056 fps step and policy inference: 91192 fps total: 78175 epoch: 482/1000 frames: 63045632
+fps step: 98583 fps step and policy inference: 88433 fps total: 74973 epoch: 483/1000 frames: 63176704
+fps step: 88822 fps step and policy inference: 79518 fps total: 67795 epoch: 484/1000 frames: 63307776
+saving next best successes:  3.4787169
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99723 fps step and policy inference: 89503 fps total: 76851 epoch: 485/1000 frames: 63438848
+fps step: 101728 fps step and policy inference: 92955 fps total: 78442 epoch: 486/1000 frames: 63569920
+fps step: 106038 fps step and policy inference: 94696 fps total: 80450 epoch: 487/1000 frames: 63700992
+fps step: 97701 fps step and policy inference: 88433 fps total: 73509 epoch: 488/1000 frames: 63832064
+fps step: 88033 fps step and policy inference: 78274 fps total: 67764 epoch: 489/1000 frames: 63963136
+fps step: 91012 fps step and policy inference: 82594 fps total: 72361 epoch: 490/1000 frames: 64094208
+fps step: 104809 fps step and policy inference: 93878 fps total: 79578 epoch: 491/1000 frames: 64225280
+saving next best successes:  3.514573
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95538 fps step and policy inference: 85891 fps total: 71914 epoch: 492/1000 frames: 64356352
+fps step: 94815 fps step and policy inference: 85302 fps total: 74643 epoch: 493/1000 frames: 64487424
+fps step: 89632 fps step and policy inference: 80596 fps total: 71412 epoch: 494/1000 frames: 64618496
+fps step: 91938 fps step and policy inference: 84212 fps total: 74330 epoch: 495/1000 frames: 64749568
+fps step: 93575 fps step and policy inference: 84088 fps total: 73532 epoch: 496/1000 frames: 64880640
+fps step: 106379 fps step and policy inference: 96328 fps total: 79734 epoch: 497/1000 frames: 65011712
+fps step: 99036 fps step and policy inference: 87887 fps total: 75571 epoch: 498/1000 frames: 65142784
+fps step: 96758 fps step and policy inference: 87983 fps total: 76394 epoch: 499/1000 frames: 65273856
+fps step: 96856 fps step and policy inference: 88093 fps total: 79301 epoch: 500/1000 frames: 65404928
+fps step: 102851 fps step and policy inference: 93590 fps total: 81702 epoch: 501/1000 frames: 65536000
+fps step: 96772 fps step and policy inference: 85601 fps total: 70553 epoch: 502/1000 frames: 65667072
+fps step: 104053 fps step and policy inference: 94400 fps total: 81771 epoch: 503/1000 frames: 65798144
+fps step: 94052 fps step and policy inference: 83714 fps total: 70190 epoch: 504/1000 frames: 65929216
+fps step: 82936 fps step and policy inference: 72131 fps total: 63587 epoch: 505/1000 frames: 66060288
+fps step: 95606 fps step and policy inference: 82370 fps total: 70395 epoch: 506/1000 frames: 66191360
+fps step: 92173 fps step and policy inference: 80729 fps total: 70042 epoch: 507/1000 frames: 66322432
+fps step: 89604 fps step and policy inference: 79147 fps total: 71169 epoch: 508/1000 frames: 66453504
+fps step: 88603 fps step and policy inference: 78365 fps total: 70080 epoch: 509/1000 frames: 66584576
+fps step: 89779 fps step and policy inference: 80719 fps total: 71426 epoch: 510/1000 frames: 66715648
+saving next best successes:  3.535287
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 92312 fps step and policy inference: 83569 fps total: 71285 epoch: 511/1000 frames: 66846720
+fps step: 92042 fps step and policy inference: 80100 fps total: 65120 epoch: 512/1000 frames: 66977792
+fps step: 90269 fps step and policy inference: 79209 fps total: 70705 epoch: 513/1000 frames: 67108864
+fps step: 86376 fps step and policy inference: 75632 fps total: 64220 epoch: 514/1000 frames: 67239936
+fps step: 95285 fps step and policy inference: 85380 fps total: 73119 epoch: 515/1000 frames: 67371008
+fps step: 95565 fps step and policy inference: 87572 fps total: 74934 epoch: 516/1000 frames: 67502080
+saving next best successes:  3.5679302
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 91559 fps step and policy inference: 83098 fps total: 72864 epoch: 517/1000 frames: 67633152
+fps step: 93013 fps step and policy inference: 83286 fps total: 72337 epoch: 518/1000 frames: 67764224
+fps step: 82486 fps step and policy inference: 74207 fps total: 64773 epoch: 519/1000 frames: 67895296
+fps step: 103262 fps step and policy inference: 93107 fps total: 82673 epoch: 520/1000 frames: 68026368
+fps step: 98435 fps step and policy inference: 90545 fps total: 78868 epoch: 521/1000 frames: 68157440
+fps step: 100381 fps step and policy inference: 91345 fps total: 81192 epoch: 522/1000 frames: 68288512
+fps step: 105958 fps step and policy inference: 94507 fps total: 78669 epoch: 523/1000 frames: 68419584
+fps step: 98058 fps step and policy inference: 85384 fps total: 74413 epoch: 524/1000 frames: 68550656
+fps step: 93992 fps step and policy inference: 84196 fps total: 72648 epoch: 525/1000 frames: 68681728
+fps step: 99781 fps step and policy inference: 90099 fps total: 79229 epoch: 526/1000 frames: 68812800
+fps step: 96589 fps step and policy inference: 83270 fps total: 73467 epoch: 527/1000 frames: 68943872
+fps step: 104401 fps step and policy inference: 94730 fps total: 81065 epoch: 528/1000 frames: 69074944
+fps step: 99278 fps step and policy inference: 87934 fps total: 75347 epoch: 529/1000 frames: 69206016
+fps step: 102842 fps step and policy inference: 93016 fps total: 79890 epoch: 530/1000 frames: 69337088
+fps step: 103662 fps step and policy inference: 94043 fps total: 81516 epoch: 531/1000 frames: 69468160
+fps step: 91546 fps step and policy inference: 76913 fps total: 69681 epoch: 532/1000 frames: 69599232
+fps step: 92192 fps step and policy inference: 82704 fps total: 73047 epoch: 533/1000 frames: 69730304
+fps step: 87500 fps step and policy inference: 76833 fps total: 69335 epoch: 534/1000 frames: 69861376
+saving next best successes:  3.5907288
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 100443 fps step and policy inference: 90060 fps total: 80007 epoch: 535/1000 frames: 69992448
+fps step: 96882 fps step and policy inference: 88577 fps total: 76193 epoch: 536/1000 frames: 70123520
+fps step: 90664 fps step and policy inference: 81391 fps total: 70483 epoch: 537/1000 frames: 70254592
+fps step: 90318 fps step and policy inference: 77019 fps total: 67584 epoch: 538/1000 frames: 70385664
+fps step: 89627 fps step and policy inference: 80615 fps total: 72654 epoch: 539/1000 frames: 70516736
+fps step: 91785 fps step and policy inference: 82520 fps total: 73696 epoch: 540/1000 frames: 70647808
+fps step: 96876 fps step and policy inference: 86004 fps total: 76602 epoch: 541/1000 frames: 70778880
+saving next best successes:  3.5998173
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99954 fps step and policy inference: 90127 fps total: 74492 epoch: 542/1000 frames: 70909952
+fps step: 91885 fps step and policy inference: 81569 fps total: 69095 epoch: 543/1000 frames: 71041024
+fps step: 101762 fps step and policy inference: 91846 fps total: 80877 epoch: 544/1000 frames: 71172096
+saving next best successes:  3.6019344
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95051 fps step and policy inference: 86404 fps total: 76243 epoch: 545/1000 frames: 71303168
+fps step: 94701 fps step and policy inference: 86452 fps total: 78083 epoch: 546/1000 frames: 71434240
+fps step: 100617 fps step and policy inference: 90085 fps total: 78904 epoch: 547/1000 frames: 71565312
+saving next best successes:  3.6143732
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 93848 fps step and policy inference: 84324 fps total: 73417 epoch: 548/1000 frames: 71696384
+fps step: 90192 fps step and policy inference: 81576 fps total: 68142 epoch: 549/1000 frames: 71827456
+fps step: 88490 fps step and policy inference: 76167 fps total: 68529 epoch: 550/1000 frames: 71958528
+fps step: 100567 fps step and policy inference: 92038 fps total: 81070 epoch: 551/1000 frames: 72089600
+fps step: 91639 fps step and policy inference: 82626 fps total: 74015 epoch: 552/1000 frames: 72220672
+fps step: 103451 fps step and policy inference: 94172 fps total: 81037 epoch: 553/1000 frames: 72351744
+fps step: 104428 fps step and policy inference: 95053 fps total: 83041 epoch: 554/1000 frames: 72482816
+fps step: 102961 fps step and policy inference: 92945 fps total: 79575 epoch: 555/1000 frames: 72613888
+saving next best successes:  3.6145897
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 103347 fps step and policy inference: 93054 fps total: 80060 epoch: 556/1000 frames: 72744960
+fps step: 106775 fps step and policy inference: 93648 fps total: 83618 epoch: 557/1000 frames: 72876032
+fps step: 103652 fps step and policy inference: 91470 fps total: 79980 epoch: 558/1000 frames: 73007104
+saving next best successes:  3.6228266
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 100932 fps step and policy inference: 89976 fps total: 79208 epoch: 559/1000 frames: 73138176
+fps step: 101849 fps step and policy inference: 93634 fps total: 82335 epoch: 560/1000 frames: 73269248
+fps step: 87687 fps step and policy inference: 78628 fps total: 69720 epoch: 561/1000 frames: 73400320
+fps step: 94787 fps step and policy inference: 85870 fps total: 77344 epoch: 562/1000 frames: 73531392
+fps step: 96655 fps step and policy inference: 85714 fps total: 77056 epoch: 563/1000 frames: 73662464
+fps step: 100311 fps step and policy inference: 90273 fps total: 80750 epoch: 564/1000 frames: 73793536
+fps step: 94732 fps step and policy inference: 83770 fps total: 74538 epoch: 565/1000 frames: 73924608
+saving next best successes:  3.6279402
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96449 fps step and policy inference: 84445 fps total: 73996 epoch: 566/1000 frames: 74055680
+fps step: 92298 fps step and policy inference: 83464 fps total: 74815 epoch: 567/1000 frames: 74186752
+saving next best successes:  3.6384306
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99722 fps step and policy inference: 90776 fps total: 80286 epoch: 568/1000 frames: 74317824
+fps step: 99362 fps step and policy inference: 88675 fps total: 79036 epoch: 569/1000 frames: 74448896
+fps step: 98409 fps step and policy inference: 89635 fps total: 78255 epoch: 570/1000 frames: 74579968
+fps step: 92360 fps step and policy inference: 81995 fps total: 73928 epoch: 571/1000 frames: 74711040
+fps step: 97457 fps step and policy inference: 87486 fps total: 76862 epoch: 572/1000 frames: 74842112
+fps step: 95423 fps step and policy inference: 85822 fps total: 77074 epoch: 573/1000 frames: 74973184
+fps step: 100542 fps step and policy inference: 89840 fps total: 77695 epoch: 574/1000 frames: 75104256
+fps step: 100728 fps step and policy inference: 89835 fps total: 80468 epoch: 575/1000 frames: 75235328
+fps step: 105014 fps step and policy inference: 95714 fps total: 85241 epoch: 576/1000 frames: 75366400
+fps step: 96883 fps step and policy inference: 87286 fps total: 77602 epoch: 577/1000 frames: 75497472
+fps step: 103841 fps step and policy inference: 92799 fps total: 79619 epoch: 578/1000 frames: 75628544
+fps step: 108144 fps step and policy inference: 97837 fps total: 86039 epoch: 579/1000 frames: 75759616
+fps step: 93210 fps step and policy inference: 82738 fps total: 74997 epoch: 580/1000 frames: 75890688
+fps step: 100164 fps step and policy inference: 88989 fps total: 77657 epoch: 581/1000 frames: 76021760
+fps step: 96518 fps step and policy inference: 85763 fps total: 74687 epoch: 582/1000 frames: 76152832
+fps step: 94225 fps step and policy inference: 84236 fps total: 73287 epoch: 583/1000 frames: 76283904
+saving next best successes:  3.6530828
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 103943 fps step and policy inference: 93776 fps total: 84289 epoch: 584/1000 frames: 76414976
+saving next best successes:  3.6813612
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 102784 fps step and policy inference: 91844 fps total: 80832 epoch: 585/1000 frames: 76546048
+fps step: 109611 fps step and policy inference: 100216 fps total: 87855 epoch: 586/1000 frames: 76677120
+fps step: 100005 fps step and policy inference: 85650 fps total: 73633 epoch: 587/1000 frames: 76808192
+fps step: 102814 fps step and policy inference: 92565 fps total: 82794 epoch: 588/1000 frames: 76939264
+fps step: 105774 fps step and policy inference: 95858 fps total: 82065 epoch: 589/1000 frames: 77070336
+fps step: 90800 fps step and policy inference: 82521 fps total: 74057 epoch: 590/1000 frames: 77201408
+fps step: 95042 fps step and policy inference: 83044 fps total: 73629 epoch: 591/1000 frames: 77332480
+saving next best successes:  3.6822176
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98686 fps step and policy inference: 88414 fps total: 76934 epoch: 592/1000 frames: 77463552
+fps step: 111264 fps step and policy inference: 98144 fps total: 83914 epoch: 593/1000 frames: 77594624
+fps step: 116603 fps step and policy inference: 105845 fps total: 93092 epoch: 594/1000 frames: 77725696
+fps step: 105827 fps step and policy inference: 95281 fps total: 81609 epoch: 595/1000 frames: 77856768
+fps step: 91876 fps step and policy inference: 83074 fps total: 74677 epoch: 596/1000 frames: 77987840
+fps step: 90761 fps step and policy inference: 83183 fps total: 73309 epoch: 597/1000 frames: 78118912
+saving next best successes:  3.7211304
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 86368 fps step and policy inference: 78738 fps total: 70230 epoch: 598/1000 frames: 78249984
+saving next best successes:  3.7464275
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 80246 fps step and policy inference: 70886 fps total: 58774 epoch: 599/1000 frames: 78381056
+fps step: 81402 fps step and policy inference: 72940 fps total: 66770 epoch: 600/1000 frames: 78512128
+fps step: 86843 fps step and policy inference: 76601 fps total: 67974 epoch: 601/1000 frames: 78643200
+fps step: 100436 fps step and policy inference: 89454 fps total: 80045 epoch: 602/1000 frames: 78774272
+fps step: 88891 fps step and policy inference: 77377 fps total: 68423 epoch: 603/1000 frames: 78905344
+fps step: 96603 fps step and policy inference: 84797 fps total: 74401 epoch: 604/1000 frames: 79036416
+fps step: 96704 fps step and policy inference: 87049 fps total: 75863 epoch: 605/1000 frames: 79167488
+fps step: 93720 fps step and policy inference: 84503 fps total: 72167 epoch: 606/1000 frames: 79298560
+fps step: 90863 fps step and policy inference: 79144 fps total: 69190 epoch: 607/1000 frames: 79429632
+fps step: 98017 fps step and policy inference: 88679 fps total: 77109 epoch: 608/1000 frames: 79560704
+fps step: 96592 fps step and policy inference: 84017 fps total: 74416 epoch: 609/1000 frames: 79691776
+fps step: 98707 fps step and policy inference: 84475 fps total: 72991 epoch: 610/1000 frames: 79822848
+fps step: 99018 fps step and policy inference: 87363 fps total: 76146 epoch: 611/1000 frames: 79953920
+fps step: 95411 fps step and policy inference: 84678 fps total: 73836 epoch: 612/1000 frames: 80084992
+fps step: 101873 fps step and policy inference: 92855 fps total: 78784 epoch: 613/1000 frames: 80216064
+fps step: 106492 fps step and policy inference: 96693 fps total: 84834 epoch: 614/1000 frames: 80347136
+fps step: 100525 fps step and policy inference: 90729 fps total: 79495 epoch: 615/1000 frames: 80478208
+saving next best successes:  3.755394
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 103420 fps step and policy inference: 94015 fps total: 80822 epoch: 616/1000 frames: 80609280
+fps step: 101565 fps step and policy inference: 90904 fps total: 76598 epoch: 617/1000 frames: 80740352
+saving next best successes:  3.7593994
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 101450 fps step and policy inference: 91109 fps total: 81539 epoch: 618/1000 frames: 80871424
+fps step: 98248 fps step and policy inference: 85611 fps total: 77149 epoch: 619/1000 frames: 81002496
+fps step: 97079 fps step and policy inference: 86630 fps total: 75664 epoch: 620/1000 frames: 81133568
+saving next best successes:  3.7790766
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 91910 fps step and policy inference: 76096 fps total: 65173 epoch: 621/1000 frames: 81264640
+fps step: 94026 fps step and policy inference: 81253 fps total: 72190 epoch: 622/1000 frames: 81395712
+fps step: 95111 fps step and policy inference: 82444 fps total: 74459 epoch: 623/1000 frames: 81526784
+saving next best successes:  3.7857428
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 97013 fps step and policy inference: 87232 fps total: 77273 epoch: 624/1000 frames: 81657856
+fps step: 102787 fps step and policy inference: 93551 fps total: 79402 epoch: 625/1000 frames: 81788928
+fps step: 107784 fps step and policy inference: 93849 fps total: 82628 epoch: 626/1000 frames: 81920000
+saving next best successes:  3.791359
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 100492 fps step and policy inference: 90401 fps total: 76642 epoch: 627/1000 frames: 82051072
+saving next best successes:  3.8150377
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 106487 fps step and policy inference: 94296 fps total: 79986 epoch: 628/1000 frames: 82182144
+fps step: 98093 fps step and policy inference: 88671 fps total: 76236 epoch: 629/1000 frames: 82313216
+fps step: 106266 fps step and policy inference: 96155 fps total: 83249 epoch: 630/1000 frames: 82444288
+fps step: 111345 fps step and policy inference: 100996 fps total: 87987 epoch: 631/1000 frames: 82575360
+saving next best successes:  3.8310814
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 116477 fps step and policy inference: 104796 fps total: 90627 epoch: 632/1000 frames: 82706432
+fps step: 105940 fps step and policy inference: 94456 fps total: 78366 epoch: 633/1000 frames: 82837504
+fps step: 102772 fps step and policy inference: 93227 fps total: 80472 epoch: 634/1000 frames: 82968576
+fps step: 103279 fps step and policy inference: 90954 fps total: 75036 epoch: 635/1000 frames: 83099648
+fps step: 100259 fps step and policy inference: 90561 fps total: 76803 epoch: 636/1000 frames: 83230720
+fps step: 102465 fps step and policy inference: 92238 fps total: 80593 epoch: 637/1000 frames: 83361792
+saving next best successes:  3.8389196
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 103348 fps step and policy inference: 92417 fps total: 81081 epoch: 638/1000 frames: 83492864
+fps step: 106362 fps step and policy inference: 95466 fps total: 81305 epoch: 639/1000 frames: 83623936
+fps step: 103368 fps step and policy inference: 93293 fps total: 78771 epoch: 640/1000 frames: 83755008
+fps step: 104455 fps step and policy inference: 95017 fps total: 77798 epoch: 641/1000 frames: 83886080
+saving next best successes:  3.8497229
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95028 fps step and policy inference: 83191 fps total: 72999 epoch: 642/1000 frames: 84017152
+fps step: 96418 fps step and policy inference: 85680 fps total: 76697 epoch: 643/1000 frames: 84148224
+fps step: 110471 fps step and policy inference: 98199 fps total: 79919 epoch: 644/1000 frames: 84279296
+saving next best successes:  3.8617048
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98068 fps step and policy inference: 87335 fps total: 74841 epoch: 645/1000 frames: 84410368
+fps step: 92884 fps step and policy inference: 84280 fps total: 73634 epoch: 646/1000 frames: 84541440
+saving next best successes:  3.8636408
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96450 fps step and policy inference: 86314 fps total: 72471 epoch: 647/1000 frames: 84672512
+fps step: 96285 fps step and policy inference: 87243 fps total: 71087 epoch: 648/1000 frames: 84803584
+fps step: 90067 fps step and policy inference: 78668 fps total: 67386 epoch: 649/1000 frames: 84934656
+fps step: 92817 fps step and policy inference: 82822 fps total: 72348 epoch: 650/1000 frames: 85065728
+saving next best successes:  3.8662138
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 92432 fps step and policy inference: 83156 fps total: 71815 epoch: 651/1000 frames: 85196800
+saving next best successes:  3.889388
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94678 fps step and policy inference: 84009 fps total: 74315 epoch: 652/1000 frames: 85327872
+fps step: 95954 fps step and policy inference: 83932 fps total: 75037 epoch: 653/1000 frames: 85458944
+saving next best successes:  3.9012794
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98862 fps step and policy inference: 87470 fps total: 76655 epoch: 654/1000 frames: 85590016
+fps step: 93240 fps step and policy inference: 81859 fps total: 73179 epoch: 655/1000 frames: 85721088
+fps step: 102447 fps step and policy inference: 91410 fps total: 81316 epoch: 656/1000 frames: 85852160
+saving next best successes:  3.9023294
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98129 fps step and policy inference: 87249 fps total: 75498 epoch: 657/1000 frames: 85983232
+fps step: 91795 fps step and policy inference: 81487 fps total: 70020 epoch: 658/1000 frames: 86114304
+fps step: 101095 fps step and policy inference: 91763 fps total: 78945 epoch: 659/1000 frames: 86245376
+saving next best successes:  3.9060726
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99490 fps step and policy inference: 87982 fps total: 76028 epoch: 660/1000 frames: 86376448
+saving next best successes:  3.9069614
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 116053 fps step and policy inference: 103469 fps total: 88842 epoch: 661/1000 frames: 86507520
+fps step: 95495 fps step and policy inference: 85750 fps total: 77001 epoch: 662/1000 frames: 86638592
+fps step: 94965 fps step and policy inference: 85142 fps total: 76240 epoch: 663/1000 frames: 86769664
+saving next best successes:  3.9221325
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95008 fps step and policy inference: 84487 fps total: 74616 epoch: 664/1000 frames: 86900736
+fps step: 92823 fps step and policy inference: 80955 fps total: 72773 epoch: 665/1000 frames: 87031808
+fps step: 91718 fps step and policy inference: 79883 fps total: 66817 epoch: 666/1000 frames: 87162880
+saving next best successes:  3.9300032
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94546 fps step and policy inference: 85923 fps total: 69457 epoch: 667/1000 frames: 87293952
+saving next best successes:  3.933319
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 85964 fps step and policy inference: 75090 fps total: 65542 epoch: 668/1000 frames: 87425024
+fps step: 82199 fps step and policy inference: 72418 fps total: 65051 epoch: 669/1000 frames: 87556096
+saving next best successes:  3.9472322
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 82844 fps step and policy inference: 74720 fps total: 63210 epoch: 670/1000 frames: 87687168
+saving next best successes:  3.9930973
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 89148 fps step and policy inference: 75565 fps total: 66290 epoch: 671/1000 frames: 87818240
+fps step: 99259 fps step and policy inference: 88777 fps total: 78611 epoch: 672/1000 frames: 87949312
+fps step: 88507 fps step and policy inference: 78751 fps total: 69898 epoch: 673/1000 frames: 88080384
+fps step: 98615 fps step and policy inference: 88359 fps total: 77964 epoch: 674/1000 frames: 88211456
+fps step: 87554 fps step and policy inference: 79485 fps total: 70645 epoch: 675/1000 frames: 88342528
+fps step: 94357 fps step and policy inference: 84953 fps total: 71365 epoch: 676/1000 frames: 88473600
+fps step: 80170 fps step and policy inference: 69550 fps total: 62648 epoch: 677/1000 frames: 88604672
+fps step: 91814 fps step and policy inference: 80542 fps total: 63489 epoch: 678/1000 frames: 88735744
+fps step: 92815 fps step and policy inference: 82822 fps total: 72729 epoch: 679/1000 frames: 88866816
+saving next best successes:  3.9970589
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96546 fps step and policy inference: 86239 fps total: 75556 epoch: 680/1000 frames: 88997888
+saving next best successes:  4.0189543
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 92915 fps step and policy inference: 83763 fps total: 74488 epoch: 681/1000 frames: 89128960
+fps step: 89157 fps step and policy inference: 78173 fps total: 69602 epoch: 682/1000 frames: 89260032
+fps step: 93468 fps step and policy inference: 84594 fps total: 71047 epoch: 683/1000 frames: 89391104
+fps step: 87913 fps step and policy inference: 77021 fps total: 65966 epoch: 684/1000 frames: 89522176
+fps step: 87485 fps step and policy inference: 78404 fps total: 68048 epoch: 685/1000 frames: 89653248
+saving next best successes:  4.028796
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96431 fps step and policy inference: 87572 fps total: 77870 epoch: 686/1000 frames: 89784320
+saving next best successes:  4.0373363
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 91491 fps step and policy inference: 81796 fps total: 72202 epoch: 687/1000 frames: 89915392
+fps step: 94932 fps step and policy inference: 84479 fps total: 74122 epoch: 688/1000 frames: 90046464
+fps step: 96130 fps step and policy inference: 83605 fps total: 73686 epoch: 689/1000 frames: 90177536
+fps step: 96255 fps step and policy inference: 84833 fps total: 75404 epoch: 690/1000 frames: 90308608
+fps step: 100712 fps step and policy inference: 91369 fps total: 76556 epoch: 691/1000 frames: 90439680
+fps step: 93907 fps step and policy inference: 81920 fps total: 72738 epoch: 692/1000 frames: 90570752
+saving next best successes:  4.0424395
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 105932 fps step and policy inference: 95775 fps total: 83387 epoch: 693/1000 frames: 90701824
+saving next best successes:  4.070771
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96902 fps step and policy inference: 85687 fps total: 74986 epoch: 694/1000 frames: 90832896
+fps step: 97284 fps step and policy inference: 87746 fps total: 76693 epoch: 695/1000 frames: 90963968
+fps step: 89951 fps step and policy inference: 78646 fps total: 70420 epoch: 696/1000 frames: 91095040
+fps step: 94592 fps step and policy inference: 83387 fps total: 74187 epoch: 697/1000 frames: 91226112
+saving next best successes:  4.0739765
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 91624 fps step and policy inference: 81415 fps total: 71324 epoch: 698/1000 frames: 91357184
+saving next best successes:  4.0798264
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96291 fps step and policy inference: 86813 fps total: 76306 epoch: 699/1000 frames: 91488256
+fps step: 94056 fps step and policy inference: 83601 fps total: 75305 epoch: 700/1000 frames: 91619328
+saving next best successes:  4.088834
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 103890 fps step and policy inference: 94126 fps total: 83556 epoch: 701/1000 frames: 91750400
+saving next best successes:  4.11145
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 101272 fps step and policy inference: 92000 fps total: 79208 epoch: 702/1000 frames: 91881472
+fps step: 104869 fps step and policy inference: 93402 fps total: 84236 epoch: 703/1000 frames: 92012544
+saving next best successes:  4.1160336
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 123320 fps step and policy inference: 112683 fps total: 99840 epoch: 704/1000 frames: 92143616
+fps step: 119161 fps step and policy inference: 107773 fps total: 95695 epoch: 705/1000 frames: 92274688
+saving next best successes:  4.1212893
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 123893 fps step and policy inference: 111034 fps total: 98544 epoch: 706/1000 frames: 92405760
+fps step: 114935 fps step and policy inference: 100150 fps total: 81138 epoch: 707/1000 frames: 92536832
+fps step: 117227 fps step and policy inference: 103684 fps total: 82419 epoch: 708/1000 frames: 92667904
+fps step: 118087 fps step and policy inference: 106371 fps total: 93535 epoch: 709/1000 frames: 92798976
+fps step: 121365 fps step and policy inference: 110510 fps total: 96607 epoch: 710/1000 frames: 92930048
+saving next best successes:  4.1368647
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 116399 fps step and policy inference: 100461 fps total: 89868 epoch: 711/1000 frames: 93061120
+fps step: 115862 fps step and policy inference: 101384 fps total: 90087 epoch: 712/1000 frames: 93192192
+fps step: 122238 fps step and policy inference: 105983 fps total: 92726 epoch: 713/1000 frames: 93323264
+fps step: 122089 fps step and policy inference: 106413 fps total: 94825 epoch: 714/1000 frames: 93454336
+saving next best successes:  4.141465
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 113593 fps step and policy inference: 95251 fps total: 85341 epoch: 715/1000 frames: 93585408
+saving next best successes:  4.1452503
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 122408 fps step and policy inference: 105352 fps total: 92565 epoch: 716/1000 frames: 93716480
+saving next best successes:  4.157605
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 116177 fps step and policy inference: 97807 fps total: 79380 epoch: 717/1000 frames: 93847552
+saving next best successes:  4.181082
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 107028 fps step and policy inference: 95517 fps total: 84336 epoch: 718/1000 frames: 93978624
+fps step: 113456 fps step and policy inference: 98207 fps total: 80711 epoch: 719/1000 frames: 94109696
+fps step: 103153 fps step and policy inference: 88739 fps total: 74356 epoch: 720/1000 frames: 94240768
+fps step: 103244 fps step and policy inference: 86386 fps total: 71730 epoch: 721/1000 frames: 94371840
+fps step: 103923 fps step and policy inference: 88574 fps total: 73223 epoch: 722/1000 frames: 94502912
+fps step: 100678 fps step and policy inference: 82784 fps total: 67770 epoch: 723/1000 frames: 94633984
+fps step: 98324 fps step and policy inference: 80460 fps total: 66275 epoch: 724/1000 frames: 94765056
+saving next best successes:  4.196553
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 113478 fps step and policy inference: 103072 fps total: 89381 epoch: 725/1000 frames: 94896128
+fps step: 110603 fps step and policy inference: 99750 fps total: 87469 epoch: 726/1000 frames: 95027200
+saving next best successes:  4.208063
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 117268 fps step and policy inference: 106856 fps total: 92880 epoch: 727/1000 frames: 95158272
+saving next best successes:  4.2191544
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 105460 fps step and policy inference: 94866 fps total: 83261 epoch: 728/1000 frames: 95289344
+fps step: 111532 fps step and policy inference: 99598 fps total: 87808 epoch: 729/1000 frames: 95420416
+fps step: 119531 fps step and policy inference: 107893 fps total: 89565 epoch: 730/1000 frames: 95551488
+fps step: 122818 fps step and policy inference: 109594 fps total: 94737 epoch: 731/1000 frames: 95682560
+saving next best successes:  4.247325
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 100770 fps step and policy inference: 91495 fps total: 79844 epoch: 732/1000 frames: 95813632
+fps step: 98887 fps step and policy inference: 87797 fps total: 75413 epoch: 733/1000 frames: 95944704
+fps step: 101003 fps step and policy inference: 89616 fps total: 79832 epoch: 734/1000 frames: 96075776
+fps step: 101368 fps step and policy inference: 90402 fps total: 79728 epoch: 735/1000 frames: 96206848
+fps step: 99951 fps step and policy inference: 87385 fps total: 77432 epoch: 736/1000 frames: 96337920
+fps step: 103730 fps step and policy inference: 93514 fps total: 81888 epoch: 737/1000 frames: 96468992
+fps step: 103798 fps step and policy inference: 92534 fps total: 82026 epoch: 738/1000 frames: 96600064
+fps step: 101257 fps step and policy inference: 89890 fps total: 76751 epoch: 739/1000 frames: 96731136
+saving next best successes:  4.252879
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 101997 fps step and policy inference: 92081 fps total: 81655 epoch: 740/1000 frames: 96862208
+fps step: 104007 fps step and policy inference: 91328 fps total: 79965 epoch: 741/1000 frames: 96993280
+fps step: 100441 fps step and policy inference: 89002 fps total: 75729 epoch: 742/1000 frames: 97124352
+fps step: 100932 fps step and policy inference: 90652 fps total: 79937 epoch: 743/1000 frames: 97255424
+saving next best successes:  4.257601
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98892 fps step and policy inference: 86764 fps total: 77215 epoch: 744/1000 frames: 97386496
+fps step: 97030 fps step and policy inference: 87323 fps total: 76838 epoch: 745/1000 frames: 97517568
+fps step: 92799 fps step and policy inference: 79318 fps total: 70035 epoch: 746/1000 frames: 97648640
+fps step: 89363 fps step and policy inference: 78940 fps total: 69293 epoch: 747/1000 frames: 97779712
+saving next best successes:  4.2806854
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99454 fps step and policy inference: 89031 fps total: 79458 epoch: 748/1000 frames: 97910784
+fps step: 98415 fps step and policy inference: 88042 fps total: 75338 epoch: 749/1000 frames: 98041856
+fps step: 92742 fps step and policy inference: 79880 fps total: 70785 epoch: 750/1000 frames: 98172928
+fps step: 99999 fps step and policy inference: 88747 fps total: 78588 epoch: 751/1000 frames: 98304000
+fps step: 90846 fps step and policy inference: 79828 fps total: 67447 epoch: 752/1000 frames: 98435072
+fps step: 90459 fps step and policy inference: 78353 fps total: 68837 epoch: 753/1000 frames: 98566144
+saving next best successes:  4.2816095
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 91432 fps step and policy inference: 81754 fps total: 71013 epoch: 754/1000 frames: 98697216
+fps step: 93773 fps step and policy inference: 83079 fps total: 69869 epoch: 755/1000 frames: 98828288
+fps step: 92934 fps step and policy inference: 84227 fps total: 74059 epoch: 756/1000 frames: 98959360
+saving next best successes:  4.2907753
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 92184 fps step and policy inference: 80665 fps total: 67392 epoch: 757/1000 frames: 99090432
+saving next best successes:  4.3034315
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 88428 fps step and policy inference: 75975 fps total: 67582 epoch: 758/1000 frames: 99221504
+fps step: 91985 fps step and policy inference: 81555 fps total: 72575 epoch: 759/1000 frames: 99352576
+fps step: 97886 fps step and policy inference: 88102 fps total: 77014 epoch: 760/1000 frames: 99483648
+fps step: 98033 fps step and policy inference: 87884 fps total: 74834 epoch: 761/1000 frames: 99614720
+saving next best successes:  4.337329
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 85433 fps step and policy inference: 75158 fps total: 65598 epoch: 762/1000 frames: 99745792
+fps step: 92809 fps step and policy inference: 83560 fps total: 73496 epoch: 763/1000 frames: 99876864
+fps step: 93053 fps step and policy inference: 82242 fps total: 71432 epoch: 764/1000 frames: 100007936
+fps step: 95084 fps step and policy inference: 85103 fps total: 75980 epoch: 765/1000 frames: 100139008
+fps step: 96964 fps step and policy inference: 83762 fps total: 75207 epoch: 766/1000 frames: 100270080
+fps step: 91606 fps step and policy inference: 80140 fps total: 72002 epoch: 767/1000 frames: 100401152
+fps step: 99975 fps step and policy inference: 90787 fps total: 80597 epoch: 768/1000 frames: 100532224
+fps step: 93764 fps step and policy inference: 83124 fps total: 71733 epoch: 769/1000 frames: 100663296
+fps step: 92949 fps step and policy inference: 82458 fps total: 73661 epoch: 770/1000 frames: 100794368
+fps step: 90859 fps step and policy inference: 80058 fps total: 71042 epoch: 771/1000 frames: 100925440
+saving next best successes:  4.350317
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 86690 fps step and policy inference: 75859 fps total: 67124 epoch: 772/1000 frames: 101056512
+saving next best successes:  4.3552523
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95036 fps step and policy inference: 84530 fps total: 74386 epoch: 773/1000 frames: 101187584
+fps step: 93447 fps step and policy inference: 82171 fps total: 71792 epoch: 774/1000 frames: 101318656
+saving next best successes:  4.3601856
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 91155 fps step and policy inference: 80403 fps total: 69943 epoch: 775/1000 frames: 101449728
+fps step: 97198 fps step and policy inference: 86456 fps total: 74287 epoch: 776/1000 frames: 101580800
+saving next best successes:  4.3652697
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 100099 fps step and policy inference: 90058 fps total: 74750 epoch: 777/1000 frames: 101711872
+saving next best successes:  4.3717375
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 100621 fps step and policy inference: 90769 fps total: 79106 epoch: 778/1000 frames: 101842944
+saving next best successes:  4.37352
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96684 fps step and policy inference: 87355 fps total: 75789 epoch: 779/1000 frames: 101974016
+saving next best successes:  4.3811054
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95696 fps step and policy inference: 86780 fps total: 75970 epoch: 780/1000 frames: 102105088
+fps step: 104095 fps step and policy inference: 95078 fps total: 83597 epoch: 781/1000 frames: 102236160
+saving next best successes:  4.3883104
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 104019 fps step and policy inference: 94817 fps total: 81711 epoch: 782/1000 frames: 102367232
+fps step: 100814 fps step and policy inference: 91337 fps total: 78502 epoch: 783/1000 frames: 102498304
+fps step: 94837 fps step and policy inference: 84008 fps total: 74693 epoch: 784/1000 frames: 102629376
+fps step: 95998 fps step and policy inference: 86286 fps total: 75816 epoch: 785/1000 frames: 102760448
+fps step: 95108 fps step and policy inference: 85180 fps total: 73970 epoch: 786/1000 frames: 102891520
+fps step: 94417 fps step and policy inference: 84985 fps total: 70082 epoch: 787/1000 frames: 103022592
+fps step: 95624 fps step and policy inference: 84769 fps total: 73024 epoch: 788/1000 frames: 103153664
+saving next best successes:  4.3953276
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 93940 fps step and policy inference: 82530 fps total: 72645 epoch: 789/1000 frames: 103284736
+fps step: 98424 fps step and policy inference: 87289 fps total: 72631 epoch: 790/1000 frames: 103415808
+fps step: 92903 fps step and policy inference: 80045 fps total: 68496 epoch: 791/1000 frames: 103546880
+saving next best successes:  4.4099684
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94054 fps step and policy inference: 81267 fps total: 71894 epoch: 792/1000 frames: 103677952
+saving next best successes:  4.444463
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96235 fps step and policy inference: 86663 fps total: 73946 epoch: 793/1000 frames: 103809024
+fps step: 101650 fps step and policy inference: 90681 fps total: 78227 epoch: 794/1000 frames: 103940096
+fps step: 95152 fps step and policy inference: 84050 fps total: 75821 epoch: 795/1000 frames: 104071168
+fps step: 98109 fps step and policy inference: 88785 fps total: 77944 epoch: 796/1000 frames: 104202240
+fps step: 93493 fps step and policy inference: 82189 fps total: 74181 epoch: 797/1000 frames: 104333312
+fps step: 124248 fps step and policy inference: 103487 fps total: 88883 epoch: 798/1000 frames: 104464384
+fps step: 106788 fps step and policy inference: 96597 fps total: 83759 epoch: 799/1000 frames: 104595456
+fps step: 110784 fps step and policy inference: 98224 fps total: 80032 epoch: 800/1000 frames: 104726528
+fps step: 108960 fps step and policy inference: 98623 fps total: 85117 epoch: 801/1000 frames: 104857600
+fps step: 100335 fps step and policy inference: 87417 fps total: 77110 epoch: 802/1000 frames: 104988672
+fps step: 101762 fps step and policy inference: 91312 fps total: 79728 epoch: 803/1000 frames: 105119744
+fps step: 104656 fps step and policy inference: 93451 fps total: 81691 epoch: 804/1000 frames: 105250816
+fps step: 101588 fps step and policy inference: 91516 fps total: 81929 epoch: 805/1000 frames: 105381888
+fps step: 107210 fps step and policy inference: 95968 fps total: 85286 epoch: 806/1000 frames: 105512960
+fps step: 106559 fps step and policy inference: 95195 fps total: 82608 epoch: 807/1000 frames: 105644032
+fps step: 102493 fps step and policy inference: 92820 fps total: 80036 epoch: 808/1000 frames: 105775104
+fps step: 99302 fps step and policy inference: 87892 fps total: 78188 epoch: 809/1000 frames: 105906176
+saving next best successes:  4.449209
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98459 fps step and policy inference: 87371 fps total: 77473 epoch: 810/1000 frames: 106037248
+fps step: 94504 fps step and policy inference: 81984 fps total: 72400 epoch: 811/1000 frames: 106168320
+fps step: 99137 fps step and policy inference: 88969 fps total: 79391 epoch: 812/1000 frames: 106299392
+fps step: 95045 fps step and policy inference: 85925 fps total: 74941 epoch: 813/1000 frames: 106430464
+saving next best successes:  4.4597197
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 93359 fps step and policy inference: 80557 fps total: 72331 epoch: 814/1000 frames: 106561536
+fps step: 91722 fps step and policy inference: 82181 fps total: 72462 epoch: 815/1000 frames: 106692608
+fps step: 100160 fps step and policy inference: 89233 fps total: 78776 epoch: 816/1000 frames: 106823680
+fps step: 94391 fps step and policy inference: 84421 fps total: 75828 epoch: 817/1000 frames: 106954752
+saving next best successes:  4.4872494
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96004 fps step and policy inference: 83697 fps total: 74503 epoch: 818/1000 frames: 107085824
+fps step: 97703 fps step and policy inference: 88372 fps total: 77637 epoch: 819/1000 frames: 107216896
+fps step: 98616 fps step and policy inference: 88128 fps total: 78357 epoch: 820/1000 frames: 107347968
+fps step: 97252 fps step and policy inference: 85785 fps total: 75213 epoch: 821/1000 frames: 107479040
+fps step: 101294 fps step and policy inference: 90218 fps total: 78416 epoch: 822/1000 frames: 107610112
+saving next best successes:  4.4895124
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94910 fps step and policy inference: 82572 fps total: 72761 epoch: 823/1000 frames: 107741184
+fps step: 93643 fps step and policy inference: 83151 fps total: 72413 epoch: 824/1000 frames: 107872256
+fps step: 100073 fps step and policy inference: 91563 fps total: 79658 epoch: 825/1000 frames: 108003328
+fps step: 100576 fps step and policy inference: 91073 fps total: 79470 epoch: 826/1000 frames: 108134400
+saving next best successes:  4.4900856
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99534 fps step and policy inference: 88914 fps total: 76204 epoch: 827/1000 frames: 108265472
+fps step: 94330 fps step and policy inference: 85197 fps total: 75654 epoch: 828/1000 frames: 108396544
+fps step: 99209 fps step and policy inference: 88978 fps total: 76948 epoch: 829/1000 frames: 108527616
+fps step: 98525 fps step and policy inference: 87726 fps total: 78087 epoch: 830/1000 frames: 108658688
+saving next best successes:  4.504734
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 101807 fps step and policy inference: 90230 fps total: 78205 epoch: 831/1000 frames: 108789760
+saving next best successes:  4.5103874
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98852 fps step and policy inference: 88288 fps total: 76077 epoch: 832/1000 frames: 108920832
+fps step: 96672 fps step and policy inference: 84625 fps total: 74326 epoch: 833/1000 frames: 109051904
+saving next best successes:  4.511262
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95558 fps step and policy inference: 85819 fps total: 73094 epoch: 834/1000 frames: 109182976
+saving next best successes:  4.524967
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 92218 fps step and policy inference: 82987 fps total: 73179 epoch: 835/1000 frames: 109314048
+saving next best successes:  4.528802
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 88863 fps step and policy inference: 78197 fps total: 66956 epoch: 836/1000 frames: 109445120
+fps step: 90701 fps step and policy inference: 79090 fps total: 69708 epoch: 837/1000 frames: 109576192
+saving next best successes:  4.53292
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95413 fps step and policy inference: 86856 fps total: 75684 epoch: 838/1000 frames: 109707264
+fps step: 90555 fps step and policy inference: 81123 fps total: 69532 epoch: 839/1000 frames: 109838336
+fps step: 94221 fps step and policy inference: 82273 fps total: 69859 epoch: 840/1000 frames: 109969408
+saving next best successes:  4.571347
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95267 fps step and policy inference: 79364 fps total: 69602 epoch: 841/1000 frames: 110100480
+fps step: 99027 fps step and policy inference: 89262 fps total: 75619 epoch: 842/1000 frames: 110231552
+fps step: 95238 fps step and policy inference: 83337 fps total: 75033 epoch: 843/1000 frames: 110362624
+fps step: 94280 fps step and policy inference: 84227 fps total: 73168 epoch: 844/1000 frames: 110493696
+fps step: 87862 fps step and policy inference: 78216 fps total: 68321 epoch: 845/1000 frames: 110624768
+fps step: 105348 fps step and policy inference: 93899 fps total: 80370 epoch: 846/1000 frames: 110755840
+fps step: 99974 fps step and policy inference: 91196 fps total: 80095 epoch: 847/1000 frames: 110886912
+fps step: 96362 fps step and policy inference: 85120 fps total: 75640 epoch: 848/1000 frames: 111017984
+fps step: 100244 fps step and policy inference: 90982 fps total: 80992 epoch: 849/1000 frames: 111149056
+saving next best successes:  4.5737677
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 95868 fps step and policy inference: 91242 fps total: 80103 epoch: 850/1000 frames: 111280128
+fps step: 96545 fps step and policy inference: 87375 fps total: 77240 epoch: 851/1000 frames: 111411200
+fps step: 95783 fps step and policy inference: 84697 fps total: 75721 epoch: 852/1000 frames: 111542272
+fps step: 99662 fps step and policy inference: 88854 fps total: 77615 epoch: 853/1000 frames: 111673344
+fps step: 93629 fps step and policy inference: 83792 fps total: 74356 epoch: 854/1000 frames: 111804416
+fps step: 98083 fps step and policy inference: 88031 fps total: 75268 epoch: 855/1000 frames: 111935488
+fps step: 98591 fps step and policy inference: 87550 fps total: 75567 epoch: 856/1000 frames: 112066560
+fps step: 84352 fps step and policy inference: 73640 fps total: 65481 epoch: 857/1000 frames: 112197632
+fps step: 94582 fps step and policy inference: 84867 fps total: 74485 epoch: 858/1000 frames: 112328704
+fps step: 95224 fps step and policy inference: 85493 fps total: 74994 epoch: 859/1000 frames: 112459776
+fps step: 89514 fps step and policy inference: 80290 fps total: 71108 epoch: 860/1000 frames: 112590848
+fps step: 97677 fps step and policy inference: 88536 fps total: 78110 epoch: 861/1000 frames: 112721920
+saving next best successes:  4.5749474
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94186 fps step and policy inference: 83858 fps total: 74733 epoch: 862/1000 frames: 112852992
+fps step: 91835 fps step and policy inference: 80739 fps total: 69260 epoch: 863/1000 frames: 112984064
+fps step: 96298 fps step and policy inference: 84688 fps total: 74857 epoch: 864/1000 frames: 113115136
+fps step: 100167 fps step and policy inference: 85714 fps total: 75010 epoch: 865/1000 frames: 113246208
+fps step: 98041 fps step and policy inference: 85835 fps total: 75777 epoch: 866/1000 frames: 113377280
+fps step: 102148 fps step and policy inference: 90736 fps total: 79683 epoch: 867/1000 frames: 113508352
+fps step: 99786 fps step and policy inference: 88293 fps total: 78335 epoch: 868/1000 frames: 113639424
+fps step: 94037 fps step and policy inference: 82105 fps total: 73442 epoch: 869/1000 frames: 113770496
+fps step: 95076 fps step and policy inference: 86082 fps total: 77384 epoch: 870/1000 frames: 113901568
+fps step: 100561 fps step and policy inference: 91120 fps total: 79160 epoch: 871/1000 frames: 114032640
+fps step: 96134 fps step and policy inference: 85757 fps total: 75939 epoch: 872/1000 frames: 114163712
+saving next best successes:  4.588169
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99028 fps step and policy inference: 90251 fps total: 77330 epoch: 873/1000 frames: 114294784
+fps step: 85627 fps step and policy inference: 72750 fps total: 63463 epoch: 874/1000 frames: 114425856
+fps step: 98503 fps step and policy inference: 88990 fps total: 78147 epoch: 875/1000 frames: 114556928
+fps step: 105297 fps step and policy inference: 92780 fps total: 79303 epoch: 876/1000 frames: 114688000
+fps step: 95415 fps step and policy inference: 86492 fps total: 76325 epoch: 877/1000 frames: 114819072
+fps step: 92696 fps step and policy inference: 82622 fps total: 73782 epoch: 878/1000 frames: 114950144
+saving next best successes:  4.600299
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 88396 fps step and policy inference: 79055 fps total: 69068 epoch: 879/1000 frames: 115081216
+saving next best successes:  4.616172
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 94629 fps step and policy inference: 83528 fps total: 74084 epoch: 880/1000 frames: 115212288
+fps step: 93926 fps step and policy inference: 84634 fps total: 75285 epoch: 881/1000 frames: 115343360
+fps step: 96977 fps step and policy inference: 86851 fps total: 75906 epoch: 882/1000 frames: 115474432
+fps step: 98688 fps step and policy inference: 89802 fps total: 78921 epoch: 883/1000 frames: 115605504
+fps step: 100648 fps step and policy inference: 88280 fps total: 74257 epoch: 884/1000 frames: 115736576
+fps step: 90409 fps step and policy inference: 77997 fps total: 69904 epoch: 885/1000 frames: 115867648
+fps step: 93992 fps step and policy inference: 83936 fps total: 73744 epoch: 886/1000 frames: 115998720
+fps step: 98757 fps step and policy inference: 87247 fps total: 75744 epoch: 887/1000 frames: 116129792
+fps step: 98700 fps step and policy inference: 88167 fps total: 78034 epoch: 888/1000 frames: 116260864
+fps step: 95823 fps step and policy inference: 86087 fps total: 76123 epoch: 889/1000 frames: 116391936
+fps step: 97269 fps step and policy inference: 88599 fps total: 75877 epoch: 890/1000 frames: 116523008
+fps step: 89774 fps step and policy inference: 78941 fps total: 69407 epoch: 891/1000 frames: 116654080
+fps step: 93982 fps step and policy inference: 82722 fps total: 71117 epoch: 892/1000 frames: 116785152
+saving next best successes:  4.620508
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 97848 fps step and policy inference: 86820 fps total: 76091 epoch: 893/1000 frames: 116916224
+fps step: 93957 fps step and policy inference: 84700 fps total: 73308 epoch: 894/1000 frames: 117047296
+fps step: 99026 fps step and policy inference: 88138 fps total: 76931 epoch: 895/1000 frames: 117178368
+fps step: 92958 fps step and policy inference: 82882 fps total: 70924 epoch: 896/1000 frames: 117309440
+saving next best successes:  4.623949
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 98712 fps step and policy inference: 90114 fps total: 78439 epoch: 897/1000 frames: 117440512
+saving next best successes:  4.644349
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96766 fps step and policy inference: 86059 fps total: 76043 epoch: 898/1000 frames: 117571584
+fps step: 92778 fps step and policy inference: 83056 fps total: 72066 epoch: 899/1000 frames: 117702656
+fps step: 97440 fps step and policy inference: 87127 fps total: 77161 epoch: 900/1000 frames: 117833728
+fps step: 97579 fps step and policy inference: 87762 fps total: 76728 epoch: 901/1000 frames: 117964800
+fps step: 98416 fps step and policy inference: 89474 fps total: 79259 epoch: 902/1000 frames: 118095872
+fps step: 95285 fps step and policy inference: 82024 fps total: 74622 epoch: 903/1000 frames: 118226944
+fps step: 104719 fps step and policy inference: 93980 fps total: 81021 epoch: 904/1000 frames: 118358016
+fps step: 101095 fps step and policy inference: 91057 fps total: 79652 epoch: 905/1000 frames: 118489088
+fps step: 100635 fps step and policy inference: 90955 fps total: 78105 epoch: 906/1000 frames: 118620160
+fps step: 92291 fps step and policy inference: 80865 fps total: 67974 epoch: 907/1000 frames: 118751232
+fps step: 94568 fps step and policy inference: 82264 fps total: 72605 epoch: 908/1000 frames: 118882304
+fps step: 97605 fps step and policy inference: 87640 fps total: 77804 epoch: 909/1000 frames: 119013376
+fps step: 93993 fps step and policy inference: 84039 fps total: 71107 epoch: 910/1000 frames: 119144448
+fps step: 97921 fps step and policy inference: 87959 fps total: 77213 epoch: 911/1000 frames: 119275520
+fps step: 92748 fps step and policy inference: 82497 fps total: 73259 epoch: 912/1000 frames: 119406592
+saving next best successes:  4.644723
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 90786 fps step and policy inference: 80586 fps total: 70962 epoch: 913/1000 frames: 119537664
+saving next best successes:  4.6613503
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 93205 fps step and policy inference: 82270 fps total: 73987 epoch: 914/1000 frames: 119668736
+fps step: 92767 fps step and policy inference: 79479 fps total: 70522 epoch: 915/1000 frames: 119799808
+fps step: 98109 fps step and policy inference: 88342 fps total: 78219 epoch: 916/1000 frames: 119930880
+fps step: 115410 fps step and policy inference: 97675 fps total: 84419 epoch: 917/1000 frames: 120061952
+saving next best successes:  4.6843605
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 102126 fps step and policy inference: 92010 fps total: 81451 epoch: 918/1000 frames: 120193024
+fps step: 107126 fps step and policy inference: 93396 fps total: 83071 epoch: 919/1000 frames: 120324096
+fps step: 99332 fps step and policy inference: 87041 fps total: 77284 epoch: 920/1000 frames: 120455168
+fps step: 97645 fps step and policy inference: 88405 fps total: 76161 epoch: 921/1000 frames: 120586240
+fps step: 101311 fps step and policy inference: 90063 fps total: 80332 epoch: 922/1000 frames: 120717312
+fps step: 102813 fps step and policy inference: 91465 fps total: 77519 epoch: 923/1000 frames: 120848384
+saving next best successes:  4.6853447
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99448 fps step and policy inference: 89825 fps total: 79182 epoch: 924/1000 frames: 120979456
+fps step: 95167 fps step and policy inference: 85300 fps total: 75791 epoch: 925/1000 frames: 121110528
+fps step: 100733 fps step and policy inference: 89621 fps total: 79241 epoch: 926/1000 frames: 121241600
+fps step: 97902 fps step and policy inference: 88169 fps total: 79084 epoch: 927/1000 frames: 121372672
+fps step: 95167 fps step and policy inference: 83304 fps total: 72141 epoch: 928/1000 frames: 121503744
+saving next best successes:  4.7186594
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 91434 fps step and policy inference: 81020 fps total: 72465 epoch: 929/1000 frames: 121634816
+fps step: 100272 fps step and policy inference: 91401 fps total: 80175 epoch: 930/1000 frames: 121765888
+fps step: 91923 fps step and policy inference: 81410 fps total: 72068 epoch: 931/1000 frames: 121896960
+fps step: 94115 fps step and policy inference: 81795 fps total: 72631 epoch: 932/1000 frames: 122028032
+fps step: 100183 fps step and policy inference: 91805 fps total: 79576 epoch: 933/1000 frames: 122159104
+fps step: 107198 fps step and policy inference: 91538 fps total: 79027 epoch: 934/1000 frames: 122290176
+fps step: 104064 fps step and policy inference: 92704 fps total: 79361 epoch: 935/1000 frames: 122421248
+fps step: 95788 fps step and policy inference: 83524 fps total: 75022 epoch: 936/1000 frames: 122552320
+fps step: 97628 fps step and policy inference: 86924 fps total: 75005 epoch: 937/1000 frames: 122683392
+fps step: 99720 fps step and policy inference: 87988 fps total: 75645 epoch: 938/1000 frames: 122814464
+fps step: 95984 fps step and policy inference: 86025 fps total: 74918 epoch: 939/1000 frames: 122945536
+fps step: 95268 fps step and policy inference: 85530 fps total: 74899 epoch: 940/1000 frames: 123076608
+fps step: 95205 fps step and policy inference: 84900 fps total: 75248 epoch: 941/1000 frames: 123207680
+fps step: 89922 fps step and policy inference: 79324 fps total: 70835 epoch: 942/1000 frames: 123338752
+fps step: 92498 fps step and policy inference: 82768 fps total: 72407 epoch: 943/1000 frames: 123469824
+fps step: 98624 fps step and policy inference: 87147 fps total: 74579 epoch: 944/1000 frames: 123600896
+fps step: 94177 fps step and policy inference: 81981 fps total: 73564 epoch: 945/1000 frames: 123731968
+fps step: 90944 fps step and policy inference: 83437 fps total: 74705 epoch: 946/1000 frames: 123863040
+fps step: 98142 fps step and policy inference: 88290 fps total: 78059 epoch: 947/1000 frames: 123994112
+fps step: 100325 fps step and policy inference: 90537 fps total: 80136 epoch: 948/1000 frames: 124125184
+fps step: 93685 fps step and policy inference: 84595 fps total: 75570 epoch: 949/1000 frames: 124256256
+saving next best successes:  4.7229853
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96210 fps step and policy inference: 84559 fps total: 74489 epoch: 950/1000 frames: 124387328
+saving next best successes:  4.7310705
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99836 fps step and policy inference: 88347 fps total: 77365 epoch: 951/1000 frames: 124518400
+fps step: 104493 fps step and policy inference: 92047 fps total: 79891 epoch: 952/1000 frames: 124649472
+fps step: 98128 fps step and policy inference: 86798 fps total: 75384 epoch: 953/1000 frames: 124780544
+fps step: 99075 fps step and policy inference: 89627 fps total: 76507 epoch: 954/1000 frames: 124911616
+saving next best successes:  4.731804
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 97487 fps step and policy inference: 88974 fps total: 78017 epoch: 955/1000 frames: 125042688
+saving next best successes:  4.743764
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 99798 fps step and policy inference: 89925 fps total: 75377 epoch: 956/1000 frames: 125173760
+fps step: 92341 fps step and policy inference: 80831 fps total: 72287 epoch: 957/1000 frames: 125304832
+fps step: 97381 fps step and policy inference: 86625 fps total: 75707 epoch: 958/1000 frames: 125435904
+saving next best successes:  4.758566
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 96190 fps step and policy inference: 86502 fps total: 76052 epoch: 959/1000 frames: 125566976
+saving next best successes:  4.7746153
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/HumanoidGPT.pth'
+fps step: 91374 fps step and policy inference: 80625 fps total: 70476 epoch: 960/1000 frames: 125698048
+fps step: 93033 fps step and policy inference: 82490 fps total: 67839 epoch: 961/1000 frames: 125829120
+fps step: 96067 fps step and policy inference: 85953 fps total: 74175 epoch: 962/1000 frames: 125960192
+fps step: 95407 fps step and policy inference: 86321 fps total: 76947 epoch: 963/1000 frames: 126091264
+fps step: 98757 fps step and policy inference: 85820 fps total: 73124 epoch: 964/1000 frames: 126222336
+fps step: 101346 fps step and policy inference: 91574 fps total: 76431 epoch: 965/1000 frames: 126353408
+fps step: 99588 fps step and policy inference: 91009 fps total: 77642 epoch: 966/1000 frames: 126484480
+fps step: 98128 fps step and policy inference: 87146 fps total: 71056 epoch: 967/1000 frames: 126615552
+fps step: 97421 fps step and policy inference: 87827 fps total: 76020 epoch: 968/1000 frames: 126746624
+fps step: 107373 fps step and policy inference: 97952 fps total: 84915 epoch: 969/1000 frames: 126877696
+fps step: 105386 fps step and policy inference: 94237 fps total: 82935 epoch: 970/1000 frames: 127008768
+fps step: 107118 fps step and policy inference: 96688 fps total: 81541 epoch: 971/1000 frames: 127139840
+fps step: 99726 fps step and policy inference: 90565 fps total: 77782 epoch: 972/1000 frames: 127270912
+fps step: 97245 fps step and policy inference: 88570 fps total: 79564 epoch: 973/1000 frames: 127401984
+fps step: 96904 fps step and policy inference: 84630 fps total: 73731 epoch: 974/1000 frames: 127533056
+fps step: 99926 fps step and policy inference: 88971 fps total: 78089 epoch: 975/1000 frames: 127664128
+fps step: 85314 fps step and policy inference: 74401 fps total: 66322 epoch: 976/1000 frames: 127795200
+fps step: 87056 fps step and policy inference: 76410 fps total: 61243 epoch: 977/1000 frames: 127926272
+fps step: 87065 fps step and policy inference: 75653 fps total: 67319 epoch: 978/1000 frames: 128057344
+fps step: 93377 fps step and policy inference: 83847 fps total: 74992 epoch: 979/1000 frames: 128188416
+fps step: 98903 fps step and policy inference: 89640 fps total: 76601 epoch: 980/1000 frames: 128319488
+fps step: 97763 fps step and policy inference: 87922 fps total: 77739 epoch: 981/1000 frames: 128450560
+fps step: 94929 fps step and policy inference: 84909 fps total: 76095 epoch: 982/1000 frames: 128581632
+fps step: 105448 fps step and policy inference: 94760 fps total: 82918 epoch: 983/1000 frames: 128712704
+fps step: 100149 fps step and policy inference: 89801 fps total: 78880 epoch: 984/1000 frames: 128843776
+fps step: 91937 fps step and policy inference: 80306 fps total: 71116 epoch: 985/1000 frames: 128974848
+fps step: 98040 fps step and policy inference: 86478 fps total: 72057 epoch: 986/1000 frames: 129105920
+fps step: 98700 fps step and policy inference: 85705 fps total: 75627 epoch: 987/1000 frames: 129236992
+fps step: 90635 fps step and policy inference: 80768 fps total: 71941 epoch: 988/1000 frames: 129368064
+fps step: 97970 fps step and policy inference: 87584 fps total: 78078 epoch: 989/1000 frames: 129499136
+fps step: 100292 fps step and policy inference: 91217 fps total: 80340 epoch: 990/1000 frames: 129630208
+fps step: 97740 fps step and policy inference: 87785 fps total: 76993 epoch: 991/1000 frames: 129761280
+fps step: 89209 fps step and policy inference: 81070 fps total: 71101 epoch: 992/1000 frames: 129892352
+fps step: 98715 fps step and policy inference: 89278 fps total: 80156 epoch: 993/1000 frames: 130023424
+fps step: 103682 fps step and policy inference: 92877 fps total: 79749 epoch: 994/1000 frames: 130154496
+fps step: 101467 fps step and policy inference: 90455 fps total: 79909 epoch: 995/1000 frames: 130285568
+fps step: 102855 fps step and policy inference: 93063 fps total: 80371 epoch: 996/1000 frames: 130416640
+fps step: 101391 fps step and policy inference: 92081 fps total: 79528 epoch: 997/1000 frames: 130547712
+fps step: 101974 fps step and policy inference: 93011 fps total: 80240 epoch: 998/1000 frames: 130678784
+fps step: 95734 fps step and policy inference: 85449 fps total: 75531 epoch: 999/1000 frames: 130809856
+fps step: 98659 fps step and policy inference: 88212 fps total: 78373 epoch: 1000/1000 frames: 130940928
+=> saving checkpoint 'runs/HumanoidGPT-2025-02-01_23-20-31/nn/last_HumanoidGPT_ep_1000.pth'
+MAX EPOCHS NUM!
