@@ -1,7 +1,7 @@
 # Eureka artifacts
 Outputs of attempts to reproduce Eureka (Ma et. al. 2023).
 
-Currently done for the Ant, Humanoid, and FrankaCabinet tasks.
+Currently done for the Ant, Humanoid, and FrankaCabinet tasks as they beat human baseline by a wide margin in the paper, and are quite fast to train.
 (rest are WIP)
 
 ## Other links

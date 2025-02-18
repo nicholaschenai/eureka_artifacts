@@ -9,9 +9,12 @@ When `max_iterations` is not specified, it is set to the environment's default.
 
 This is a training-only hyperparameter;
 
+NOTE: 2025-02-13 redo franka_cabinet
+
 
 | timestamp | `env_name` | `max_iterations` |
 |-----------|-----------|----------------|
+| 2025-02-13_09-26-08 | franka_cabinet | default |
 | 2025-02-02_14-49-34 | franka_cabinet | default |
 | 2025-02-01_18-54-34 | humanoid | default |
 | 2025-01-31_13-55-23 | ant | default |
